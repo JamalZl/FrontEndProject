@@ -1,0 +1,185 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  -webkit-box-shadow: 3px 4px 7px -1px rgba(0, 0, 0, 0.48);
+          box-shadow: 3px 4px 7px -1px rgba(0, 0, 0, 0.48);
+}
+
+nav .logo-links-cart {
+  height: 115px;
+}
+
+nav .logo-links-cart .logo a img {
+  width: 205px;
+  height: 25px;
+}
+
+nav .logo-links-cart .nav-links ul {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+nav .logo-links-cart .nav-links .sub-links {
+  padding: 0;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links .homeLi::before {
+  content: '';
+  width: 0px;
+}
+
+nav .logo-links-cart .nav-links .sub-links .homeLi:hover::before {
+  content: '';
+  width: 45px;
+  height: 1px;
+  background-color: grey;
+  position: absolute;
+  top: 67px;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+nav .logo-links-cart .nav-links .sub-links a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+nav .logo-links-cart .nav-links .sub-links li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .home {
+  background-color: white;
+  height: 0px;
+  position: absolute;
+  top: 115px;
+  overflow: hidden;
+  width: 200px;
+  margin-left: -23px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .home ul {
+  padding: 20px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .home ul li {
+  margin-top: 10px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .home ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li:hover .home {
+  height: 280px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .pages {
+  background-color: white;
+  height: 0px;
+  position: absolute;
+  top: 115px;
+  overflow: hidden;
+  width: 200px;
+  margin-left: -23px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .pages ul {
+  padding: 20px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .pages ul li {
+  margin-top: 10px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .pages ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li:hover .pages {
+  height: 140px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: white;
+  height: 0px;
+  position: absolute;
+  top: 115px;
+  left: 8%;
+  overflow: hidden;
+  width: 1265px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .shop ul {
+  padding: 25px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .shop ul li {
+  margin-top: 0px;
+  height: 10%;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .shop ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li:hover .shop {
+  height: 500px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+main {
+  background-color: #1b1b1b;
+  height: 80vh;
+}
+
+@font-face {
+  font-family: ExtraLight;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+  font-family: ExtraLight;
+}
+/*# sourceMappingURL=style.css.map */
