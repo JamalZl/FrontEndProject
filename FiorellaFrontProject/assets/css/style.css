@@ -69,6 +69,7 @@ nav .logo-links-cart .nav-links .sub-links li .home {
   height: 0px;
   position: absolute;
   top: 115px;
+  z-index: 6;
   overflow: hidden;
   width: 200px;
   margin-left: -23px;
@@ -101,6 +102,7 @@ nav .logo-links-cart .nav-links .sub-links li .pages {
   background-color: white;
   height: 0px;
   position: absolute;
+  z-index: 6;
   top: 115px;
   overflow: hidden;
   width: 200px;
@@ -139,6 +141,7 @@ nav .logo-links-cart .nav-links .sub-links li .shop {
   background-color: white;
   height: 0px;
   position: absolute;
+  z-index: 6;
   top: 115px;
   left: 8%;
   overflow: hidden;
@@ -163,15 +166,619 @@ nav .logo-links-cart .nav-links .sub-links li .shop ul li a {
 
 nav .logo-links-cart .nav-links .sub-links li:hover .shop {
   height: 500px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio {
+  background-color: white;
+  height: 0px;
+  position: absolute;
+  z-index: 1;
+  top: 115px;
+  visibility: hidden;
+  width: 200px;
+  margin-left: -23px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio ul {
+  padding: 20px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio ul li {
+  margin-top: 10px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-layouts {
+  background-color: white;
+  height: 180px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  left: 200px;
+  overflow: hidden;
+  width: 200px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-layouts ul {
+  padding: 20px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-layouts ul li {
+  padding-top: 8px;
+  margin-top: 0px;
+  height: 20%;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-layouts ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolioLayoutsLi:hover .portfolio-inner-layouts {
+  height: 180px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  opacity: 1;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-single {
+  background-color: white;
+  height: 180px;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  z-index: 2;
+  left: 200px;
+  overflow: hidden;
+  width: 200px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-single ul {
+  padding: 20px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-single ul li {
+  padding-top: 8px;
+  margin-top: 0px;
+  height: 20%;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-single ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolioSingleLi:hover .portfolio-inner-single {
+  height: 180px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  opacity: 1;
+}
+
+nav .logo-links-cart .nav-links .sub-links li:hover .portfolio {
+  height: 200px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  visibility: visible;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog {
+  background-color: white;
+  height: 0px;
+  position: absolute;
+  opacity: 0;
+  z-index: 6;
+  top: 115px;
+  visibility: hidden;
+  width: 200px;
+  margin-left: -23px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog ul {
+  padding: 20px;
+  padding-right: 2px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog ul li {
+  margin-top: 10px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog .blog-inner-post {
+  background-color: white;
+  height: 230px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  left: 200px;
+  overflow: hidden;
+  width: 200px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog .blog-inner-post ul {
+  padding: 20px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog .blog-inner-post ul li {
+  padding-top: 10px;
+  margin-top: 0px;
+  height: 20%;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog .blog-inner-post ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .blog .blogPostLi:hover .blog-inner-post {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  opacity: 1;
+}
+
+nav .logo-links-cart .nav-links .sub-links li:hover .blog {
+  height: 140px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .elements {
+  background-color: white;
+  height: 0px;
+  position: absolute;
+  z-index: 6;
+  top: 115px;
+  overflow: hidden;
+  width: 200px;
+  margin-left: -23px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .elements ul {
+  padding: 20px;
+  list-style: none;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .elements ul li {
+  margin-top: 10px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li .elements ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 14px;
+}
+
+nav .logo-links-cart .nav-links .sub-links li:hover .elements {
+  height: 160px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
 
-main {
-  background-color: #1b1b1b;
-  height: 80vh;
+main #flowers3 .flowerWhite {
+  position: relative;
+}
+
+main #flowers3 .flowerWhite img {
+  width: 100%;
+}
+
+main #flowers3 .text-slideFlowers .text {
+  position: absolute;
+  left: 200px;
+  top: 180px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #flowers3 .text-slideFlowers .text .title span {
+  font-size: 38px;
+  font-weight: 500;
+}
+
+main #flowers3 .text-slideFlowers .text .title span #redFlower {
+  color: red;
+}
+
+main #flowers3 .text-slideFlowers .text .desc {
+  margin-top: 25px;
+}
+
+main #flowers3 .text-slideFlowers .text .signature {
+  margin-top: 25px;
+}
+
+main #productList {
+  padding-bottom: 50px;
+}
+
+main #productList .productTitle ul {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+main #productList .productTitle ul li {
+  list-style: none;
+}
+
+main #productList .productTitle ul li a {
+  text-decoration: none;
+  color: grey;
+  font-size: 12px;
+}
+
+main #productList .products .product {
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+main #productList .products .product .image {
+  overflow: hidden;
+  position: relative;
+}
+
+main #productList .products .product .image .sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 29px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+main #productList .products .product .image .sale span {
+  color: black;
+}
+
+main #productList .products .product .image .sold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 29px;
+  background-color: black;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-align: center;
+  z-index: 10;
+}
+
+main #productList .products .product .image .sold span {
+  color: white;
+}
+
+main #productList .products .product .image:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #productList .products .product .image img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 295px;
+  height: 380px;
+}
+
+main #productList .products .product .productName {
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+main #productList .products .product .productPrice {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  color: grey;
+}
+
+main #video {
+  background-color: #f7f7f7;
+}
+
+main #video .video-article {
+  padding: 10% 0px;
+}
+
+main #video .video-article .videoImg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+main #video .video-article .videoImg .icon {
+  position: absolute;
+  z-index: 10;
+}
+
+main #video .video-article .videoImg .icon i {
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 85px;
+}
+
+main #video .video-article .videoImg img {
+  width: 650px;
+  height: 420px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main #video .video-article .videoImg img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #video .video-article .article .title {
+  margin-top: 20px;
+}
+
+main #video .video-article .article .title h5 {
+  line-height: 120%;
+  font-size: 35px;
+}
+
+main #video .video-article .article .title h5 span {
+  color: red;
+}
+
+main #video .video-article .article .desc {
+  margin-top: 15px;
+}
+
+main #video .video-article .article .list ul {
+  margin-top: 15px;
+  list-style: none;
+  font-size: 20px;
+}
+
+main #video .video-article .article .list ul li {
+  margin-top: 8px;
+}
+
+main #flowerExpert .info-experts .info {
+  margin-top: 10%;
+}
+
+main #flowerExpert .info-experts .info .title {
+  text-align: center;
+}
+
+main #flowerExpert .info-experts .info .title h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 38px;
+}
+
+main #flowerExpert .info-experts .info .desc {
+  text-align: center;
+  color: grey;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+main #flowerExpert .info-experts .experts {
+  padding-bottom: 10%;
+}
+
+main #flowerExpert .info-experts .experts .expert {
+  margin-top: 6%;
+  text-align: center;
+}
+
+main #flowerExpert .info-experts .experts .expert .expName {
+  font-size: 14px;
+  margin-top: 8%;
+}
+
+main #flowerExpert .info-experts .experts .expert .expProfession {
+  font-size: 12px;
+  margin-top: 3%;
+  color: grey;
+}
+
+main #myParallax .parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+main #myParallax .parallax-window .parallaxText {
+  position: relative;
+  top: 35%;
+}
+
+main #myParallax .parallax-window .parallaxText h2 {
+  color: white;
+}
+
+main #myParallax .parallax-window .registration button {
+  height: 60px;
+  width: 168px;
+  padding: 0;
+  background-color: #f64b3a;
+  color: #fce3ff;
+  font-size: 13px;
+  border: solid 1px #f64b3a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 4%;
+}
+
+main #myParallax .parallax-window .registration button:hover {
+  background-color: #fe3e2b;
+  border: solid 1px #fe3e2b;
+}
+
+main #myParallax .parallax-window .registration input {
+  width: 466px;
+  height: 60px;
+  padding: 0;
+  font-size: 12px;
+  padding-left: 3%;
+  margin-top: 4%;
+}
+
+main #blog {
+  background-color: #f8f8f8;
+}
+
+main #blog .blogArticle {
+  padding-top: 8%;
+}
+
+main #blog .blogArticle .blogDesc {
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+main #blog .blogImages .blogImage .image {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+main #blog .blogImages .blogImage .image img {
+  height: 266px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #blog .blogImages .blogImage .image img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+main #blog .blogImages .blogImage .imageName {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+
+main #blog .blogImages .blogImage .imageDesc {
+  text-align: center;
+  color: grey;
+  padding-bottom: 20%;
+}
+
+main #slider .mySlider {
+  width: 100%;
+  height: 450px;
+  background-color: hotpink;
+}
+
+footer .footer {
+  background-color: #fefaf3;
+}
+
+footer .footer .topFooter ul {
+  padding-top: 6%;
+  padding-bottom: 4%;
+  list-style: none;
+}
+
+footer .footer .topFooter ul h5 {
+  margin-bottom: 19px;
+  font-size: 13px;
+}
+
+footer .footer .topFooter ul li a {
+  text-decoration: none;
+  color: grey;
+  font-size: 11px;
+}
+
+footer .footer .bottomFooter {
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+footer .footer .bottomFooter .rights {
+  font-size: 12px;
+  color: grey;
+}
+
+footer .footer .bottomFooter .socialMedia span {
+  margin-right: 15px;
+}
+
+footer .footer .bottomFooter .socialMedia span a {
+  text-decoration: none;
+  color: grey;
+  font-size: 11px;
 }
 
 @font-face {

@@ -1,0 +1,846 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    box-shadow: 3px 4px 7px -1px rgba(0, 0, 0, 0.48);
+
+    .logo-links-cart {
+        height: 115px;
+
+        .logo {
+            a {
+                img {
+                    width: 205px;
+                    height: 25px;
+                }
+            }
+        }
+
+        .nav-links {
+            ul {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+
+            .sub-links {
+                padding: 0;
+                list-style: none;
+
+                .homeLi {
+                    &::before {
+                        content: '';
+                        width: 0px;
+                    }
+
+                    &:hover {
+                        &::before {
+                            content: '';
+                            width: 45px;
+                            height: 1px;
+                            background-color: grey;
+                            position: absolute;
+                            top: 67px;
+                            transition: width .3s ease-in-out;
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #1b1b1b;
+
+                }
+
+                li {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .home {
+                        background-color: white;
+                        height: 0px;
+                        position: absolute;
+                        top: 115px;
+                        z-index: 6;
+                        overflow: hidden;
+                        width: 200px;
+                        margin-left: -23px;
+
+                        ul {
+                            padding: 20px;
+                            list-style: none;
+
+                            li {
+                                margin-top: 10px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #1b1b1b;
+                                    font-size: 14px;
+
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover .home {
+                        height: 280px;
+                        transition: 0.2s;
+                        transition-delay: 0.1s;
+                    }
+
+                    .pages {
+                        background-color: white;
+                        height: 0px;
+                        position: absolute;
+                        z-index: 6;
+                        top: 115px;
+                        overflow: hidden;
+                        width: 200px;
+                        margin-left: -23px;
+
+                        ul {
+                            padding: 20px;
+                            list-style: none;
+
+                            li {
+                                margin-top: 10px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #1b1b1b;
+                                    font-size: 14px;
+
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover .pages {
+                        height: 140px;
+                        transition: 0.2s;
+                        transition-delay: 0.1s;
+                    }
+
+                    .shop {
+                        display: flex;
+                        justify-content: space-around;
+                        background-color: white;
+                        height: 0px;
+                        position: absolute;
+                        z-index: 6;
+                        top: 115px;
+                        left: 8%;
+                        overflow: hidden;
+                        width: 1265px;
+                        // margin-left: -23px;
+
+                        ul {
+                            padding: 25px;
+                            list-style: none;
+
+                            li {
+                                margin-top: 0px;
+                                height: 10%;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #1b1b1b;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover .shop {
+                        height: 500px;
+                        transition: 0.3s;
+                        transition-delay: 0.1s;
+                    }
+
+                    .portfolio {
+                        background-color: white;
+                        height: 0px;
+                        position: absolute;
+                        z-index: 1;
+                        top: 115px;
+                        // overflow: hidden;
+                        visibility: hidden;
+                        width: 200px;
+                        margin-left: -23px;
+
+                        ul {
+
+                            padding: 20px;
+                            list-style: none;
+
+                            li {
+
+                                margin-top: 10px;
+
+
+
+                                a {
+                                    text-decoration: none;
+                                    color: #1b1b1b;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .portfolio-inner-layouts {
+
+                            background-color: white;
+                            height: 180px;
+                            opacity: 0;
+                            position: absolute;
+                            top: 50%;
+                            z-index: 2;
+                            left: 200px;
+                            overflow: hidden;
+                            width: 200px;
+                            // margin-left: -23px;
+
+                            ul {
+                                padding: 20px;
+                                list-style: none;
+
+                                li {
+                                    padding-top: 8px;
+                                    margin-top: 0px;
+                                    height: 20%;
+
+                                    a {
+                                        text-decoration: none;
+                                        // color: #1b1b1b;
+                                        color: black;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .portfolioLayoutsLi:hover .portfolio-inner-layouts {
+                            height: 180px;
+                            transition: 0.5s;
+                            transition-delay: 0.1s;
+                            opacity: 1;
+
+                        }
+
+                        .portfolio-inner-single {
+                            background-color: white;
+                            height: 180px;
+                            opacity: 0;
+                            position: absolute;
+                            top: 70%;
+                            z-index: 2;
+                            left: 200px;
+                            overflow: hidden;
+                            width: 200px;
+                            // margin-left: -23px;
+
+                            ul {
+                                padding: 20px;
+                                list-style: none;
+
+                                li {
+                                    padding-top: 8px;
+                                    margin-top: 0px;
+                                    height: 20%;
+
+                                    a {
+                                        text-decoration: none;
+                                        // color: #1b1b1b;
+                                        color: black;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .portfolioSingleLi:hover .portfolio-inner-single {
+                            height: 180px;
+                            transition: 0.5s;
+                            transition-delay: 0.1s;
+                            opacity: 1;
+                        }
+
+                    }
+
+                    &:hover .portfolio {
+                        height: 200px;
+                        transition: 0.2s;
+                        transition-delay: 0.1s;
+                        visibility: visible;
+                    }
+
+                    .blog {
+                        background-color: white;
+                        height: 0px;
+                        position: absolute;
+                        opacity: 0;
+                        z-index: 6;
+                        top: 115px;
+                        visibility: hidden;
+                        width: 200px;
+                        margin-left: -23px;
+
+                        ul {
+                            padding: 20px;
+                            padding-right: 2px;
+                            list-style: none;
+
+                            li {
+                                margin-top: 10px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #1b1b1b;
+                                    font-size: 14px;
+
+                                }
+                            }
+                        }
+
+                        .blog-inner-post {
+                            background-color: white;
+                            height: 230px;
+                            opacity: 0;
+                            position: absolute;
+                            top: 50%;
+                            z-index: 2;
+                            left: 200px;
+                            overflow: hidden;
+                            width: 200px;
+                            // margin-left: -23px;
+
+                            ul {
+                                padding: 20px;
+                                list-style: none;
+
+                                li {
+                                    padding-top: 10px;
+                                    margin-top: 0px;
+                                    height: 20%;
+
+                                    a {
+                                        text-decoration: none;
+                                        // color: #1b1b1b;
+                                        color: black;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .blogPostLi:hover .blog-inner-post {
+                            transition: 0.5s;
+                            transition-delay: 0.1s;
+                            opacity: 1;
+                        }
+                    }
+
+                    &:hover .blog {
+                        height: 140px;
+                        transition: 0.2s;
+                        visibility: visible;
+                        opacity: 1;
+                        transition-delay: 0.1s;
+                    }
+
+                    .elements {
+                        background-color: white;
+                        height: 0px;
+                        position: absolute;
+                        z-index: 6;
+                        top: 115px;
+                        overflow: hidden;
+                        width: 200px;
+                        margin-left: -23px;
+
+                        ul {
+                            padding: 20px;
+                            list-style: none;
+
+                            li {
+                                margin-top: 10px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #1b1b1b;
+                                    font-size: 14px;
+
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover .elements {
+                        height: 160px;
+                        transition: 0.2s;
+                        transition-delay: 0.1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    // background: rgb(243, 243, 243);
+    // height: 61vh;
+
+    #flowers3 {
+        .flowerWhite {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+        .text-slideFlowers {
+
+            .text {
+                position: absolute;
+                left: 200px;
+                top: 180px;
+                z-index: 5;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .title {
+
+
+                    span {
+                        font-size: 38px;
+                        font-weight: 500;
+
+                        #redFlower {
+                            color: red;
+                        }
+                    }
+                }
+
+                .desc {
+                    margin-top: 25px;
+                }
+
+                .signature {
+                    margin-top: 25px;
+                }
+            }
+
+            .flowers {}
+        }
+    }
+
+    #productList {
+        padding-bottom: 50px;
+
+        .productTitle {
+            ul {
+                margin-top: 50px;
+                margin-bottom: 20px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: grey;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .products {
+            .product {
+                cursor: pointer;
+                margin-top: 15px;
+
+                .image {
+                    overflow: hidden;
+                    position: relative;
+
+                    .sale {
+                        span {
+                            color: black;
+
+                        }
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 29px;
+                        background-color: white;
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        text-align: center;
+                        z-index: 10;
+                    }
+
+                    .sold {
+                        span {
+                            color: white;
+
+                        }
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 29px;
+                        background-color: black;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                        text-align: center;
+                        z-index: 10;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    img {
+                        transition: 0.3s;
+                        width: 295px;
+                        height: 380px;
+                    }
+                }
+
+                .productName {
+                    font-size: 13px;
+                    margin-top: 10px;
+                    text-align: center;
+                    letter-spacing: 1.5px;
+
+
+                }
+
+                //    .cart-container{
+                //        text-align: center;
+                //        overflow: hidden;
+
+                //     .addToCart {
+                //         transform: translateX(-70px);
+                //         box-sizing: border-box;
+                //         width: 120px;
+                //         font-size: 12px;
+                //         text-align: center;
+                //         .text{
+                //             padding-right: 20px;
+                //         }
+                //         .price{
+
+                //         }
+                //      }
+                //    }
+
+                .productPrice {
+                    font-size: 12px;
+                    margin-top: 10px;
+                    text-align: center;
+                    color: grey;
+                }
+
+            }
+        }
+    }
+
+    #video {
+        background-color: rgb(247, 247, 247);
+
+        .video-article {
+            padding: 10% 0px;
+
+            .videoImg {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                cursor: pointer;
+
+                .icon {
+                    position: absolute;
+                    z-index: 10;
+
+                    i {
+                        color: white;
+                        background-color: red;
+                        border-radius: 50%;
+                        font-size: 85px;
+
+                    }
+                }
+
+
+
+                img {
+                    width: 650px;
+                    height: 420px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(1.05);
+
+                    }
+                }
+            }
+
+            .article {
+                .title {
+                    margin-top: 20px;
+
+                    h5 {
+                        line-height: 120%;
+                        font-size: 35px;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                }
+
+                .desc {
+                    margin-top: 15px;
+                }
+
+                .list {
+                    ul {
+                        margin-top: 15px;
+                        list-style: none;
+                        font-size: 20px;
+
+                        li {
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #flowerExpert {
+        .info-experts {
+            .info {
+                margin-top: 10%;
+
+                .title {
+                    text-align: center;
+
+                    h2 {
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 38px;
+                    }
+
+
+                }
+
+                .desc {
+                    text-align: center;
+                    color: grey;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 18px;
+                }
+            }
+
+            .experts {
+                padding-bottom: 10%;
+
+                .expert {
+                    margin-top: 6%;
+                    text-align: center;
+
+                    .expName {
+                        font-size: 14px;
+                        margin-top: 8%;
+
+                    }
+
+                    .expProfession {
+                        font-size: 12px;
+                        margin-top: 3%;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+
+    #myParallax {
+        .parallax-window {
+            min-height: 400px;
+            background: transparent;
+
+            .parallaxText {
+                position: relative;
+                top: 35%;
+
+                h2 {
+                    color: white;
+                }
+            }
+
+            .registration {
+                button {
+                    height: 60px;
+                    width: 168px;
+                    padding: 0;
+                    background-color: rgb(246, 75, 58);
+                    color: rgb(252, 227, 255);
+                    font-size: 13px;
+                    border: solid 1px rgb(246, 75, 58);
+                    transition: 0.3s;
+                    margin-top: 4%;
+
+                    &:hover {
+                        background-color: rgb(254, 62, 43);
+                        border: solid 1px rgb(254, 62, 43);
+                    }
+                }
+
+                input {
+                    width: 466px;
+                    height: 60px;
+                    padding: 0;
+                    font-size: 12px;
+                    padding-left: 3%;
+                    margin-top: 4%;
+                }
+            }
+        }
+    }
+
+    #blog {
+        background-color: rgb(248, 248, 248);
+
+        .blogArticle {
+            padding-top: 8%;
+
+            .blogDesc {
+                padding-top: 1%;
+                padding-bottom: 2%;
+            }
+        }
+
+        .blogImages {
+            .blogImage {
+                .image {
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    img {
+                        // width: 100%;
+                        height: 266px;
+                        transition: 0.4s;
+
+                        &:hover {
+                            transform: scale(1.03)
+                        }
+
+
+                    }
+                }
+
+                .imageName {
+                    text-align: center;
+                    margin-top: 5%;
+                    margin-bottom: 4%;
+                    cursor: pointer;
+                }
+
+                .imageDesc {
+                    text-align: center;
+                    color: grey;
+                    padding-bottom: 20%;
+                }
+            }
+        }
+    }
+
+    #slider {
+        .mySlider {
+            width: 100%;
+            height: 450px;
+            background-color: hotpink;
+        }
+    }
+}
+
+footer {
+    .footer {
+        background-color: rgb(254, 250, 243);
+
+        .topFooter {
+            ul {
+                padding-top: 6%;
+                padding-bottom: 4%;
+                list-style: none;
+
+                h5 {
+                    margin-bottom: 19px;
+                    font-size: 13px;
+                }
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: grey;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .bottomFooter {
+            margin-top: 10px;
+            padding-bottom: 15px;
+
+            .rights {
+                font-size: 12px;
+                color: grey;
+            }
+
+            .socialMedia {
+                span {
+                    margin-right: 15px;
+
+                    a {
+                        text-decoration: none;
+                        color: grey;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@font-face {
+    font-family: ExtraLight;
+    src: url(../fonts/Montserrat-Regular.ttf)
+}
+
+body {
+    font-family: ExtraLight;
+}
