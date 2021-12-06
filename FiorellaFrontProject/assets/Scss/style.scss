@@ -8,386 +8,570 @@ li {
     padding: 0px;
 }
 
-nav {
-    box-shadow: 3px 4px 7px -1px rgba(0, 0, 0, 0.48);
+header {
+    nav {
 
-    .logo-links-cart {
-        height: 115px;
+        .logo-links-cart {
+            height: 115px;
 
-        .logo {
-            a {
-                img {
-                    width: 205px;
-                    height: 25px;
+            .logo {
+                a {
+                    img {
+                        width: 205px;
+                        height: 25px;
+                    }
                 }
             }
-        }
 
-        .nav-links {
-            ul {
-                font-size: 12px;
-                letter-spacing: 1px;
-            }
+            .nav-links {
+                ul {
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                }
 
-            .sub-links {
-                padding: 0;
-                list-style: none;
+                .sub-links {
+                    padding: 0;
+                    list-style: none;
 
-                .homeLi {
-                    &::before {
-                        content: '';
-                        width: 0px;
-                    }
-
-                    &:hover {
+                    .homeLi {
                         &::before {
                             content: '';
-                            width: 45px;
-                            height: 1px;
-                            background-color: grey;
-                            position: absolute;
-                            top: 67px;
-                            transition: width .3s ease-in-out;
+                            width: 0px;
                         }
-                    }
-                }
 
-                a {
-                    text-decoration: none;
-                    color: #1b1b1b;
-
-                }
-
-                li {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer;
-
-                    .home {
-                        background-color: white;
-                        height: 0px;
-                        position: absolute;
-                        top: 115px;
-                        z-index: 6;
-                        overflow: hidden;
-                        width: 200px;
-                        margin-left: -23px;
-
-                        ul {
-                            padding: 20px;
-                            list-style: none;
-
-                            li {
-                                margin-top: 10px;
-
-                                a {
-                                    text-decoration: none;
-                                    color: #1b1b1b;
-                                    font-size: 14px;
-
-                                }
+                        &:hover {
+                            &::before {
+                                content: '';
+                                width: 45px;
+                                height: 1px;
+                                background-color: grey;
+                                position: absolute;
+                                top: 67px;
+                                transition: width .3s ease-in-out;
                             }
                         }
                     }
 
-                    &:hover .home {
-                        height: 280px;
-                        transition: 0.2s;
-                        transition-delay: 0.1s;
+                    a {
+                        text-decoration: none;
+                        color: #1b1b1b;
+
                     }
 
-                    .pages {
-                        background-color: white;
-                        height: 0px;
-                        position: absolute;
-                        z-index: 6;
-                        top: 115px;
-                        overflow: hidden;
-                        width: 200px;
-                        margin-left: -23px;
-
-                        ul {
-                            padding: 20px;
-                            list-style: none;
-
-                            li {
-                                margin-top: 10px;
-
-                                a {
-                                    text-decoration: none;
-                                    color: #1b1b1b;
-                                    font-size: 14px;
-
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover .pages {
-                        height: 140px;
-                        transition: 0.2s;
-                        transition-delay: 0.1s;
-                    }
-
-                    .shop {
+                    li {
+                        height: 100%;
                         display: flex;
-                        justify-content: space-around;
-                        background-color: white;
-                        height: 0px;
-                        position: absolute;
-                        z-index: 6;
-                        top: 115px;
-                        left: 8%;
-                        overflow: hidden;
-                        width: 1265px;
-                        // margin-left: -23px;
+                        align-items: center;
+                        cursor: pointer;
 
-                        ul {
-                            padding: 25px;
-                            list-style: none;
-
-                            li {
-                                margin-top: 0px;
-                                height: 10%;
-
-                                a {
-                                    text-decoration: none;
-                                    color: #1b1b1b;
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover .shop {
-                        height: 500px;
-                        transition: 0.3s;
-                        transition-delay: 0.1s;
-                    }
-
-                    .portfolio {
-                        background-color: white;
-                        height: 0px;
-                        position: absolute;
-                        z-index: 1;
-                        top: 115px;
-                        // overflow: hidden;
-                        visibility: hidden;
-                        width: 200px;
-                        margin-left: -23px;
-
-                        ul {
-
-                            padding: 20px;
-                            list-style: none;
-
-                            li {
-
-                                margin-top: 10px;
-
-
-
-                                a {
-                                    text-decoration: none;
-                                    color: #1b1b1b;
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-
-                        .portfolio-inner-layouts {
-
+                        .home {
                             background-color: white;
-                            height: 180px;
-                            opacity: 0;
+                            height: 0px;
                             position: absolute;
-                            top: 50%;
-                            z-index: 2;
-                            left: 200px;
+                            top: 115px;
+                            z-index: 6;
                             overflow: hidden;
                             width: 200px;
-                            // margin-left: -23px;
+                            margin-left: -23px;
 
                             ul {
                                 padding: 20px;
                                 list-style: none;
 
                                 li {
-                                    padding-top: 8px;
-                                    margin-top: 0px;
-                                    height: 20%;
+                                    margin-top: 10px;
 
                                     a {
                                         text-decoration: none;
-                                        // color: #1b1b1b;
-                                        color: black;
+                                        color: #1b1b1b;
                                         font-size: 14px;
+
                                     }
                                 }
                             }
                         }
 
-                        .portfolioLayoutsLi:hover .portfolio-inner-layouts {
-                            height: 180px;
-                            transition: 0.5s;
+                        &:hover .home {
+                            height: 280px;
+                            transition: 0.2s;
                             transition-delay: 0.1s;
-                            opacity: 1;
-
                         }
 
-                        .portfolio-inner-single {
+                        .pages {
                             background-color: white;
-                            height: 180px;
-                            opacity: 0;
+                            height: 0px;
                             position: absolute;
-                            top: 70%;
-                            z-index: 2;
-                            left: 200px;
+                            z-index: 6;
+                            top: 115px;
                             overflow: hidden;
                             width: 200px;
-                            // margin-left: -23px;
+                            margin-left: -23px;
 
                             ul {
                                 padding: 20px;
                                 list-style: none;
 
                                 li {
-                                    padding-top: 8px;
-                                    margin-top: 0px;
-                                    height: 20%;
+                                    margin-top: 10px;
 
                                     a {
                                         text-decoration: none;
-                                        // color: #1b1b1b;
-                                        color: black;
+                                        color: #1b1b1b;
+                                        font-size: 14px;
+
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .pages {
+                            height: 140px;
+                            transition: 0.2s;
+                            transition-delay: 0.1s;
+                        }
+
+                        .shop {
+                            display: flex;
+                            justify-content: space-around;
+                            background-color: white;
+                            height: 0px;
+                            position: absolute;
+                            z-index: 6;
+                            top: 115px;
+                            left: 8%;
+                            overflow: hidden;
+                            width: 1265px;
+                            // margin-left: -23px;
+
+                            ul {
+                                padding: 25px;
+                                list-style: none;
+
+                                li {
+                                    margin-top: 0px;
+                                    height: 10%;
+
+                                    a {
+                                        text-decoration: none;
+                                        color: #1b1b1b;
                                         font-size: 14px;
                                     }
                                 }
                             }
                         }
 
-                        .portfolioSingleLi:hover .portfolio-inner-single {
-                            height: 180px;
-                            transition: 0.5s;
+                        &:hover .shop {
+                            height: 500px;
+                            transition: 0.3s;
                             transition-delay: 0.1s;
-                            opacity: 1;
                         }
 
-                    }
+                        .portfolio {
+                            background-color: white;
+                            height: 0px;
+                            position: absolute;
+                            z-index: 1;
+                            top: 115px;
+                            // overflow: hidden;
+                            visibility: hidden;
+                            width: 200px;
+                            margin-left: -23px;
 
-                    &:hover .portfolio {
-                        height: 200px;
-                        transition: 0.2s;
-                        transition-delay: 0.1s;
-                        visibility: visible;
-                    }
+                            ul {
 
-                    .blog {
-                        background-color: white;
-                        height: 0px;
-                        position: absolute;
-                        opacity: 0;
-                        z-index: 6;
-                        top: 115px;
-                        visibility: hidden;
-                        width: 200px;
-                        margin-left: -23px;
+                                padding: 20px;
+                                list-style: none;
 
-                        ul {
-                            padding: 20px;
-                            padding-right: 2px;
-                            list-style: none;
+                                li {
 
-                            li {
-                                margin-top: 10px;
+                                    margin-top: 10px;
 
-                                a {
-                                    text-decoration: none;
-                                    color: #1b1b1b;
-                                    font-size: 14px;
 
+
+                                    a {
+                                        text-decoration: none;
+                                        color: #1b1b1b;
+                                        font-size: 14px;
+                                    }
                                 }
+                            }
+
+                            .portfolio-inner-layouts {
+
+                                background-color: white;
+                                height: 180px;
+                                opacity: 0;
+                                position: absolute;
+                                top: 50%;
+                                z-index: 2;
+                                left: 200px;
+                                overflow: hidden;
+                                width: 200px;
+                                // margin-left: -23px;
+
+                                ul {
+                                    padding: 20px;
+                                    list-style: none;
+
+                                    li {
+                                        padding-top: 8px;
+                                        margin-top: 0px;
+                                        height: 20%;
+
+                                        a {
+                                            text-decoration: none;
+                                            // color: #1b1b1b;
+                                            color: black;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .portfolioLayoutsLi:hover .portfolio-inner-layouts {
+                                height: 180px;
+                                transition: 0.5s;
+                                transition-delay: 0.1s;
+                                opacity: 1;
+
+                            }
+
+                            .portfolio-inner-single {
+                                background-color: white;
+                                height: 180px;
+                                opacity: 0;
+                                position: absolute;
+                                top: 70%;
+                                z-index: 2;
+                                left: 200px;
+                                overflow: hidden;
+                                width: 200px;
+                                // margin-left: -23px;
+
+                                ul {
+                                    padding: 20px;
+                                    list-style: none;
+
+                                    li {
+                                        padding-top: 8px;
+                                        margin-top: 0px;
+                                        height: 20%;
+
+                                        a {
+                                            text-decoration: none;
+                                            // color: #1b1b1b;
+                                            color: black;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .portfolioSingleLi:hover .portfolio-inner-single {
+                                height: 180px;
+                                transition: 0.5s;
+                                transition-delay: 0.1s;
+                                opacity: 1;
+                            }
+
+                        }
+
+                        &:hover .portfolio {
+                            height: 200px;
+                            transition: 0.2s;
+                            transition-delay: 0.1s;
+                            visibility: visible;
+                        }
+
+                        .blog {
+                            background-color: white;
+                            height: 0px;
+                            position: absolute;
+                            opacity: 0;
+                            z-index: 6;
+                            top: 115px;
+                            visibility: hidden;
+                            width: 200px;
+                            margin-left: -23px;
+
+                            ul {
+                                padding: 20px;
+                                padding-right: 2px;
+                                list-style: none;
+
+                                li {
+                                    margin-top: 10px;
+
+                                    a {
+                                        text-decoration: none;
+                                        color: #1b1b1b;
+                                        font-size: 14px;
+
+                                    }
+                                }
+                            }
+
+                            .blog-inner-post {
+                                background-color: white;
+                                height: 230px;
+                                opacity: 0;
+                                position: absolute;
+                                top: 50%;
+                                z-index: 2;
+                                left: 200px;
+                                overflow: hidden;
+                                width: 200px;
+                                // margin-left: -23px;
+
+                                ul {
+                                    padding: 20px;
+                                    list-style: none;
+
+                                    li {
+                                        padding-top: 10px;
+                                        margin-top: 0px;
+                                        height: 20%;
+
+                                        a {
+                                            text-decoration: none;
+                                            // color: #1b1b1b;
+                                            color: black;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .blogPostLi:hover .blog-inner-post {
+                                transition: 0.5s;
+                                transition-delay: 0.1s;
+                                opacity: 1;
                             }
                         }
 
-                        .blog-inner-post {
+                        &:hover .blog {
+                            height: 140px;
+                            transition: 0.2s;
+                            visibility: visible;
+                            opacity: 1;
+                            transition-delay: 0.1s;
+                        }
+
+                        .elements {
                             background-color: white;
-                            height: 230px;
-                            opacity: 0;
+                            height: 0px;
                             position: absolute;
-                            top: 50%;
-                            z-index: 2;
-                            left: 200px;
+                            z-index: 6;
+                            top: 115px;
                             overflow: hidden;
                             width: 200px;
-                            // margin-left: -23px;
+                            margin-left: -23px;
 
                             ul {
                                 padding: 20px;
                                 list-style: none;
 
                                 li {
-                                    padding-top: 10px;
-                                    margin-top: 0px;
-                                    height: 20%;
+                                    margin-top: 10px;
 
                                     a {
                                         text-decoration: none;
-                                        // color: #1b1b1b;
-                                        color: black;
+                                        color: #1b1b1b;
                                         font-size: 14px;
+
                                     }
                                 }
                             }
                         }
 
-                        .blogPostLi:hover .blog-inner-post {
-                            transition: 0.5s;
+                        &:hover .elements {
+                            height: 160px;
+                            transition: 0.2s;
                             transition-delay: 0.1s;
-                            opacity: 1;
                         }
                     }
+                }
+            }
 
-                    &:hover .blog {
-                        height: 140px;
-                        transition: 0.2s;
-                        visibility: visible;
-                        opacity: 1;
-                        transition-delay: 0.1s;
+
+        }
+
+        .menu-icon {
+            display: none;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .menu {
+            .closeX {
+                padding: 10px;
+                font-size: 19px;
+            }
+
+            position: fixed;
+            top: 0;
+            left:0%;
+            height: 100vh;
+            background-color: rgb(207, 181, 62);
+            width: 375px;
+            display: none;
+
+            transition: 0.3s;
+            transition-timing-function: linear;
+
+            .menu-nav-links {
+                padding: 28px;
+
+                span {
+                    i {
+                        font-size: 12px;
+                        position: relative;
+                        left: 1px;
+                        bottom: 1px;
                     }
+                }
 
-                    .elements {
-                        background-color: white;
-                        height: 0px;
-                        position: absolute;
-                        z-index: 6;
-                        top: 115px;
-                        overflow: hidden;
-                        width: 200px;
-                        margin-left: -23px;
+                .myRotate {
+                    transform: rotate(90deg);
+                    transition: 0.2s;
+                }
 
-                        ul {
-                            padding: 20px;
-                            list-style: none;
+
+                ul {
+                    li {
+                        .menuHome {
+                            margin-left: 10px;
+                            display: none;
 
                             li {
-                                margin-top: 10px;
+                                a {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+
+                        .menuPages {
+                            display: none;
+                            margin-left: 10px;
+
+                            li {
+                                a {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+
+                        .menuShop {
+                            display: none;
+                            margin-left: 10px;
+
+                            .pt {
+                                display: none;
+                            }
+
+                            .sp {
+                                display: none;
+                            }
+
+                            .st {
+                                display: none;
+                            }
+
+                            .sl {
+                                display: none;
+                            }
+
+                            ul {
+                                list-style: none;
+
+                                li {
+                                    a {
+                                        text-decoration: none;
+                                        font-size: 13px;
+                                    }
+                                }
+
+                            }
+
+                            h4 {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .menuPortfolio {
+                            margin-left: 10px;
+                            display: none;
+
+                            ul {
+                                list-style: none;
+
+                                li {
+                                    a {
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+
+                            .menuPortfolioLayoutsLi {
+                                .menuPortfolio-inner-layouts {
+                                    display: none;
+                                }
+                            }
+
+
+                            li {
+                                ul {
+                                    list-style: none;
+                                    font-size: 12px;
+                                }
 
                                 a {
+                                    font-size: 13px;
                                     text-decoration: none;
-                                    color: #1b1b1b;
-                                    font-size: 14px;
+                                }
+                            }
 
+
+                            .menuPortfolioSingleLi {
+                                .menuPortfolio-inner-single {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .menuBlog {
+                            display: none;
+                            margin-left: 10px;
+
+                            ul {
+                                list-style: none;
+
+                                .menuBlogPostLi {
+
+
+                                    .menuBlog-inner-post {
+                                        display: none;
+
+                                        ul {
+                                            list-style: none;
+
+                                            li {
+                                                a {
+                                                    text-decoration: none;
+                                                    font-size: 13px;
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
 
-                    &:hover .elements {
-                        height: 160px;
-                        transition: 0.2s;
-                        transition-delay: 0.1s;
+
+                    a {
+                        text-decoration: none;
+                        color: red;
                     }
                 }
             }
@@ -396,78 +580,198 @@ nav {
 }
 
 main {
-    // background: rgb(243, 243, 243);
-    // height: 61vh;
 
     #flowers3 {
-        .flowerWhite {
-            position: relative;
 
-            img {
-                width: 100%;
+        position: relative;
+
+        .imagesSlide {
+            overflow: hidden;
+
+            .imgScale {
+                position: relative;
+
+                img {
+                    opacity: 0;
+                    position: relative;
+                    z-index: -2;
+                    animation: linear 0s normal none infinite running zoom;
+
+                    animation-duration: 6s;
+
+
+                    width: 100%;
+                    height: 477px;
+                }
+
+                @keyframes zoom {
+                    from {
+                        transform: scale(1);
+                        opacity: 0.4;
+                    }
+
+                    to {
+                        transform: scale(1.12);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .clickright {
+                position: absolute;
+                transform: translate(1%, -50%);
+                font-size: 45px;
+                top: 50%;
+                right: 1%;
+                color: rgb(194, 194, 194);
+                transition: 0.3s;
+                transition-timing-function: ease-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            .clickleft {
+                position: absolute;
+                transform: translate(1%, -50%);
+                font-size: 45px;
+                top: 50%;
+                left: 1%;
+                color: rgb(194, 194, 194);
+                transition: 0.3s;
+                transition-timing-function: ease-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: black;
+                }
+
             }
         }
 
+        .flowersInfo {
+            margin-left: 5%;
 
-        .text-slideFlowers {
+            transition: 5.5s;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translate(5%, -50%);
+            width: 380px;
 
-            .text {
-                position: absolute;
-                left: 200px;
-                top: 180px;
-                z-index: 5;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+            .Infos {
 
-                .title {
+                justify-content: space-around;
 
-
+                .titleInfo {
                     span {
-                        font-size: 38px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 50px;
                         font-weight: 500;
+                        margin-left: 10px;
+                        font-weight: lighter;
+                        line-height: 1;
 
-                        #redFlower {
+                        &:nth-child(2) {
                             color: red;
                         }
                     }
                 }
 
-                .desc {
-                    margin-top: 25px;
-                }
 
-                .signature {
-                    margin-top: 25px;
+            }
+
+            .descInfo {
+                margin-top: 25px;
+
+                p {
+                    opacity: 60%;
+                    padding-left: 10px;
+                    font-size: 14px;
                 }
             }
 
-            .flowers {}
+            .signatureInfo {
+                padding-left: 10px;
+                margin-top: 25px;
+
+                img {
+                    width: 190px;
+                }
+            }
+
         }
     }
 
+
     #productList {
         padding-bottom: 50px;
+        margin-top: 50px;
 
-        .productTitle {
-            ul {
-                margin-top: 50px;
-                margin-bottom: 20px;
+        .title-filter {
+            .productTitle {
+                ul {
 
-                li {
-                    list-style: none;
+                    margin-bottom: 20px;
 
-                    a {
-                        text-decoration: none;
-                        color: grey;
-                        font-size: 12px;
+                    li {
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: grey;
+                            font-size: 12px;
+                        }
                     }
                 }
             }
+
+            // .filter {
+            //     .filter-icon {
+            //         span {
+            //             background-color: white;
+            //             height: 0px;
+            //             position: absolute;
+            //             color: black;
+            //             top: 115px;
+            //             z-index: 6;
+            //             overflow: hidden;
+            //             width: 200px;
+            //             margin-left: -23px;
+
+            //             &:hover {
+            //                 height: 280px;
+            //                 transition: 0.2s;
+            //                 transition-delay: 0.1s;
+            //             }
+            //         }
+
+            //     }
+            // }
         }
 
         .products {
             .product {
+                &:hover .text {
+                    opacity: 1;
+                    transform: translateX(10px);
+                    transition: 0.3s;
+                }
+
+                &:hover .price {
+                    transform: translateX(100px);
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+
+                .text {
+                    transform: translateX(-100px);
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+
                 cursor: pointer;
                 margin-top: 15px;
 
@@ -555,237 +859,286 @@ main {
                 //    }
 
                 .productPrice {
+                    width: 100%;
                     font-size: 12px;
                     margin-top: 10px;
                     text-align: center;
                     color: grey;
-                }
-
-            }
-        }
-    }
-
-    #video {
-        background-color: rgb(247, 247, 247);
-
-        .video-article {
-            padding: 10% 0px;
-
-            .videoImg {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-                cursor: pointer;
-
-                .icon {
-                    position: absolute;
-                    z-index: 10;
-
-                    i {
-                        color: white;
-                        background-color: red;
-                        border-radius: 50%;
-                        font-size: 85px;
-
-                    }
-                }
 
 
 
-                img {
-                    width: 650px;
-                    height: 420px;
-                    transition: 0.3s;
 
-                    &:hover {
-                        transform: scale(1.05);
-
-                    }
-                }
-            }
-
-            .article {
-                .title {
-                    margin-top: 20px;
-
-                    h5 {
-                        line-height: 120%;
-                        font-size: 35px;
-
-                        span {
-                            color: red;
-                        }
+                    .price {
+                        transition: 0.3s;
+                        position: relative;
+                        right: 35px;
                     }
 
                 }
 
-                .desc {
-                    margin-top: 15px;
-                }
-
-                .list {
-                    ul {
-                        margin-top: 15px;
-                        list-style: none;
-                        font-size: 20px;
-
-                        li {
-                            margin-top: 8px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    #flowerExpert {
-        .info-experts {
-            .info {
-                margin-top: 10%;
-
-                .title {
-                    text-align: center;
-
-                    h2 {
-                        font-family: 'Times New Roman', Times, serif;
-                        font-size: 38px;
-                    }
-
-
-                }
-
-                .desc {
-                    text-align: center;
-                    color: grey;
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: 18px;
-                }
             }
 
-            .experts {
-                padding-bottom: 10%;
-
-                .expert {
-                    margin-top: 6%;
-                    text-align: center;
-
-                    .expName {
-                        font-size: 14px;
-                        margin-top: 8%;
-
-                    }
-
-                    .expProfession {
-                        font-size: 12px;
-                        margin-top: 3%;
-                        color: grey;
-                    }
-                }
-            }
-        }
-    }
-
-    #myParallax {
-        .parallax-window {
-            min-height: 400px;
-            background: transparent;
-
-            .parallaxText {
-                position: relative;
-                top: 35%;
-
-                h2 {
-                    color: white;
-                }
-            }
-
-            .registration {
-                button {
-                    height: 60px;
-                    width: 168px;
-                    padding: 0;
-                    background-color: rgb(246, 75, 58);
-                    color: rgb(252, 227, 255);
-                    font-size: 13px;
-                    border: solid 1px rgb(246, 75, 58);
-                    transition: 0.3s;
-                    margin-top: 4%;
-
-                    &:hover {
-                        background-color: rgb(254, 62, 43);
-                        border: solid 1px rgb(254, 62, 43);
-                    }
-                }
-
-                input {
-                    width: 466px;
-                    height: 60px;
-                    padding: 0;
-                    font-size: 12px;
-                    padding-left: 3%;
-                    margin-top: 4%;
-                }
-            }
-        }
-    }
-
-    #blog {
-        background-color: rgb(248, 248, 248);
-
-        .blogArticle {
-            padding-top: 8%;
-
-            .blogDesc {
-                padding-top: 1%;
-                padding-bottom: 2%;
-            }
-        }
-
-        .blogImages {
-            .blogImage {
-                .image {
-                    overflow: hidden;
-                    cursor: pointer;
-
-                    img {
-                        // width: 100%;
-                        height: 266px;
-                        transition: 0.4s;
-
-                        &:hover {
-                            transform: scale(1.03)
-                        }
-
-
-                    }
-                }
-
-                .imageName {
-                    text-align: center;
-                    margin-top: 5%;
-                    margin-bottom: 4%;
-                    cursor: pointer;
-                }
-
-                .imageDesc {
-                    text-align: center;
-                    color: grey;
-                    padding-bottom: 20%;
-                }
-            }
-        }
-    }
-
-    #slider {
-        .mySlider {
-            width: 100%;
-            height: 450px;
-            background-color: hotpink;
         }
     }
 }
+
+#video {
+    background-color: rgb(247, 247, 247);
+
+    .video-article {
+        padding: 10% 0px;
+
+        .videoImg {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            cursor: pointer;
+
+            .icon {
+                position: absolute;
+                z-index: 10;
+
+                i {
+                    color: white;
+                    background-color: red;
+                    border-radius: 50%;
+                    font-size: 85px;
+
+                }
+            }
+
+
+
+            img {
+                width: 650px;
+                height: 420px;
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+
+                }
+            }
+        }
+
+        .article {
+            .title {
+                margin-top: 20px;
+
+                h5 {
+                    line-height: 120%;
+                    font-size: 35px;
+
+                    span {
+                        color: red;
+                    }
+                }
+
+            }
+
+            .desc {
+                margin-top: 15px;
+            }
+
+            .list {
+                ul {
+                    margin-top: 15px;
+                    list-style: none;
+                    font-size: 20px;
+
+                    li {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#flowerExpert {
+    .info-experts {
+        .info {
+            margin-top: 10%;
+
+            .title {
+                text-align: center;
+
+                h2 {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 38px;
+                }
+
+
+            }
+
+            .desc {
+                text-align: center;
+                color: grey;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;
+            }
+        }
+
+        .experts {
+            padding-bottom: 10%;
+
+            .expert {
+                margin-top: 6%;
+                text-align: center;
+
+                .expName {
+                    font-size: 14px;
+                    margin-top: 8%;
+
+                }
+
+                .expProfession {
+                    font-size: 12px;
+                    margin-top: 3%;
+                    color: grey;
+                }
+            }
+        }
+    }
+}
+
+#myParallax {
+    .parallax-window {
+        min-height: 500px;
+        background: transparent;
+
+        .parallaxText {
+            position: relative;
+            top: 35%;
+
+            h2 {
+                color: white;
+            }
+        }
+
+        .registration {
+            button {
+                height: 60px;
+                width: 168px;
+                padding: 0;
+                background-color: rgb(246, 75, 58);
+                color: rgb(252, 227, 255);
+                font-size: 13px;
+                border: solid 1px rgb(246, 75, 58);
+                transition: 0.3s;
+                margin-top: 4%;
+
+                &:hover {
+                    background-color: rgb(254, 62, 43);
+                    border: solid 1px rgb(254, 62, 43);
+                }
+            }
+
+            input {
+                width: 466px;
+                height: 60px;
+                padding: 0;
+                font-size: 12px;
+                padding-left: 3%;
+                margin-top: 4%;
+            }
+        }
+    }
+}
+
+#blog {
+    background-color: rgb(248, 248, 248);
+
+    .blogArticle {
+        padding-top: 8%;
+
+        .blogDesc {
+            padding-top: 1%;
+            padding-bottom: 2%;
+            color: grey;
+        }
+    }
+
+    .blogImages {
+        .blogImage {
+            .image {
+                overflow: hidden;
+                cursor: pointer;
+
+                .date {
+                    width: 98px;
+                    height: 32px;
+                    background-color: white;
+                    position: absolute;
+                    z-index: 5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 9px;
+
+
+                    span {
+                        color: black;
+                        font-size: 11px;
+                        transition: 0.2s;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+
+                img {
+                    // width: 100%;
+                    height: 266px;
+                    transition: 0.4s;
+
+                    &:hover {
+                        transform: scale(1.03)
+                    }
+
+
+                }
+            }
+
+            .imageName {
+                text-align: center;
+                margin-top: 5%;
+                margin-bottom: 4%;
+                cursor: pointer;
+            }
+
+            .imageDesc {
+                text-align: center;
+                color: grey;
+                padding-bottom: 20%;
+            }
+        }
+    }
+}
+
+
+#slider {
+    .owl-carousel {
+        .item {
+            .sliderInfosImage {
+                padding-top: 6%;
+                padding-bottom: 7%;
+
+                .innerSliderInfosImage {
+                    .sliderImage {
+                        img {
+                            padding-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 footer {
     .footer {
@@ -834,6 +1187,38 @@ footer {
             }
         }
     }
+}
+
+@media screen and(max-width:993px) {
+    header {
+        nav {
+            .logo-links-cart {
+                .nav-links {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    header {
+        nav {
+            .logo-links-cart {
+                .search-cart {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    header {
+        nav {
+            .menu-icon {
+                display: flex;
+            }
+        }
+    }
+
 }
 
 @font-face {
