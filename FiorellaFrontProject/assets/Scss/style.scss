@@ -403,6 +403,8 @@ header {
         }
 
         .menu {
+            z-index: 10;
+
             .closeX {
                 padding: 10px;
                 font-size: 19px;
@@ -727,29 +729,6 @@ main {
                     }
                 }
             }
-
-            // .filter {
-            //     .filter-icon {
-            //         span {
-            //             background-color: white;
-            //             height: 0px;
-            //             position: absolute;
-            //             color: black;
-            //             top: 115px;
-            //             z-index: 6;
-            //             overflow: hidden;
-            //             width: 200px;
-            //             margin-left: -23px;
-
-            //             &:hover {
-            //                 height: 280px;
-            //                 transition: 0.2s;
-            //                 transition-delay: 0.1s;
-            //             }
-            //         }
-
-            //     }
-            // }
         }
 
         .products {
@@ -838,25 +817,6 @@ main {
 
 
                 }
-
-                //    .cart-container{
-                //        text-align: center;
-                //        overflow: hidden;
-
-                //     .addToCart {
-                //         transform: translateX(-70px);
-                //         box-sizing: border-box;
-                //         width: 120px;
-                //         font-size: 12px;
-                //         text-align: center;
-                //         .text{
-                //             padding-right: 20px;
-                //         }
-                //         .price{
-
-                //         }
-                //      }
-                //    }
 
                 .productPrice {
                     width: 100%;
@@ -1021,7 +981,7 @@ main {
         .registration {
             button {
                 height: 60px;
-                width: 168px;
+                width: 32%;
                 padding: 0;
                 background-color: rgb(246, 75, 58);
                 color: rgb(252, 227, 255);
@@ -1188,6 +1148,501 @@ footer {
         }
     }
 }
+
+#shopproductNameLis {
+    background-color: rgb(250, 250, 249);
+
+    h1 {
+        padding-top: 4%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 55px;
+    }
+
+    p {
+        font-size: 17px;
+        color: grey;
+        padding-bottom: 4%;
+    }
+}
+
+#shopOrangeAmaryllis {
+    padding-bottom: 8%;
+
+    .shopAmeryllisImages {
+        .smallImages {
+            margin-top: 4%;
+
+            .image {
+                margin-top: 20px;
+
+                img {
+                    width: 118px;
+                    height: 145px;
+                }
+
+            }
+        }
+
+        .bigImage {
+            margin-top: 7.1%;
+
+            img {
+                margin-left: 6%;
+                width: 498px;
+                height: 642px;
+            }
+        }
+    }
+
+    .shopAmeryllisInfo {
+        position: relative;
+        left: 5%;
+        top: 45px;
+
+        .title {
+            h2 {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 14px;
+                color: grey;
+            }
+        }
+
+        .desc {
+            color: grey;
+            font-size: 15px;
+        }
+
+        .quantityButton {
+            display: flex;
+
+            button {
+                width: 181px;
+                height: 51px;
+                background-color: black;
+                color: white;
+                border: black 1px;
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.86;
+                }
+            }
+
+            .quantity {
+                span {
+                    color: grey;
+                    font-size: 13px;
+                }
+
+                width: 261px;
+                height: 51px;
+                border: solid 1px;
+
+                .icon-number {
+                    input {
+                        width: 23px;
+                        border-collapse: collapse;
+                        border: 1px solid white;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    i {
+                        font-size: 13px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+#shopDesc-info-review {
+    .shopTitle {
+        .shopDescription {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border: 1px solid rgb(218, 215, 215);
+            border-bottom: none;
+            cursor: pointer;
+        }
+
+        .shopInfo {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border: 1px solid rgb(218, 215, 215);
+            border-left: none;
+            border-bottom: none;
+            cursor: pointer;
+        }
+
+        .shopReview {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border: 1px solid rgb(218, 215, 215);
+            border-left: none;
+            border-bottom: none;
+            cursor: pointer;
+
+        }
+    }
+
+    .shopDesc {
+        border-top: 1px solid rgb(218, 215, 215);
+        border-bottom: 1px solid rgb(218, 215, 215);
+        margin-bottom: 3%;
+
+        .descCart {
+            margin-top: 2%;
+            padding: 3% 0;
+
+            .innerDesc {
+                margin-top: 2%;
+                font-size: 13px;
+                color: grey;
+            }
+        }
+    }
+
+    .shopInfo {
+        border-bottom: 1px solid rgb(218, 215, 215);
+        border-top: 1px solid rgb(218, 215, 215);
+
+        .infoCart {
+            padding: 3% 0;
+        }
+    }
+
+    .shopReview {
+        border-bottom: 1px solid rgb(218, 215, 215);
+        border-top: 1px solid rgb(218, 215, 215);
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 141px;
+            height: 50px;
+            background-color: rgb(236, 85, 85);
+            color: white;
+            border: solid rgb(236, 85, 85) 1px;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}
+
+.tabActive {
+    transition: 0.3s;
+    background-color: rgb(245, 80, 80);
+    color: white;
+}
+
+#shopRelatedProducts {
+    padding: 4% 0;
+
+    h3 {
+        font-size: 14px;
+        color: black;
+    }
+
+    .products {
+        .product {
+            &:hover .text {
+                opacity: 1;
+                transform: translateX(10px);
+                transition: 0.3s;
+            }
+
+            &:hover .price {
+                transform: translateX(100px);
+                opacity: 0;
+                transition: 0.3s;
+            }
+
+            .text {
+                transform: translateX(-100px);
+                opacity: 0;
+                transition: 0.3s;
+            }
+
+            cursor: pointer;
+            margin-top: 15px;
+
+            .image {
+                overflow: hidden;
+                position: relative;
+
+                .sale {
+                    span {
+                        color: black;
+
+                    }
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 29px;
+                    background-color: white;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    text-align: center;
+                    z-index: 10;
+                }
+
+                .sold {
+                    span {
+                        color: white;
+
+                    }
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 29px;
+                    background-color: black;
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    text-align: center;
+                    z-index: 10;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.05);
+                    }
+                }
+
+                img {
+                    transition: 0.3s;
+                    width: 295px;
+                    height: 380px;
+                }
+            }
+
+            .productName {
+                font-size: 13px;
+                margin-top: 10px;
+                text-align: center;
+                letter-spacing: 1.5px;
+
+
+            }
+
+            .productPrice {
+                width: 100%;
+                font-size: 12px;
+                margin-top: 10px;
+                text-align: center;
+                color: grey;
+
+
+
+
+                .price {
+                    transition: 0.3s;
+                    position: relative;
+                    right: 35px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+#entranceTabs {
+    background-color: rgb(250, 250, 249);
+
+    h1 {
+        padding-top: 4%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 55px;
+        padding-bottom: 4%;
+    }
+}
+
+#tabsUnderTitle {
+    .tabsLeftContent {
+        .shopTitle {
+            .tabService {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: none;
+                cursor: pointer;
+            }
+
+            .tabShop {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid rgb(218, 215, 215);
+                border-left: none;
+                border-bottom: none;
+                cursor: pointer;
+            }
+
+            .tabProduct {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgb(218, 215, 215);
+                border-left: none;
+                border-bottom: none;
+                cursor: pointer;
+
+            }
+        }
+
+        .service {
+            .shopDesc {
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .shop {
+
+            .shopInfo {
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .product {
+            .shopReview {
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .tabsRightContent {
+        .shopTitle {
+            .tabService {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: none;
+                cursor: pointer;
+            }
+
+            .tabShop {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid rgb(218, 215, 215);
+                border-left: none;
+                border-bottom: none;
+                cursor: pointer;
+            }
+
+            .tabProduct {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgb(218, 215, 215);
+                border-left: none;
+                border-bottom: none;
+                cursor: pointer;
+
+            }
+        }
+
+        .service {
+            .shopDesc {
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .shop {
+
+            .shopInfo {
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .product {
+            .shopReview {
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and(max-width:993px) {
     header {

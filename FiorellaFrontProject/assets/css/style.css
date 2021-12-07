@@ -398,9 +398,10 @@ header nav .menu-icon {
 }
 
 header nav .menu {
+  z-index: 10;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0%;
   height: 100vh;
   background-color: #cfb53e;
   width: 375px;
@@ -946,7 +947,7 @@ main #productList .products .product .productPrice .price {
 
 #myParallax .parallax-window .registration button {
   height: 60px;
-  width: 168px;
+  width: 32%;
   padding: 0;
   background-color: #f64b3a;
   color: #fce3ff;
@@ -1091,6 +1092,533 @@ footer .footer .bottomFooter .socialMedia span a {
   text-decoration: none;
   color: grey;
   font-size: 11px;
+}
+
+#shopproductNameLis {
+  background-color: #fafaf9;
+}
+
+#shopproductNameLis h1 {
+  padding-top: 4%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 55px;
+}
+
+#shopproductNameLis p {
+  font-size: 17px;
+  color: grey;
+  padding-bottom: 4%;
+}
+
+#shopOrangeAmaryllis {
+  padding-bottom: 8%;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisImages .smallImages {
+  margin-top: 4%;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisImages .smallImages .image {
+  margin-top: 20px;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisImages .smallImages .image img {
+  width: 118px;
+  height: 145px;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisImages .bigImage {
+  margin-top: 7.1%;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisImages .bigImage img {
+  margin-left: 6%;
+  width: 498px;
+  height: 642px;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo {
+  position: relative;
+  left: 5%;
+  top: 45px;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .title h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .title p {
+  font-size: 14px;
+  color: grey;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .desc {
+  color: grey;
+  font-size: 15px;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .quantityButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .quantityButton button {
+  width: 181px;
+  height: 51px;
+  background-color: black;
+  color: white;
+  border: black 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .quantityButton button:hover {
+  opacity: 0.86;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .quantityButton .quantity {
+  width: 261px;
+  height: 51px;
+  border: solid 1px;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .quantityButton .quantity span {
+  color: grey;
+  font-size: 13px;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .quantityButton .quantity .icon-number input {
+  width: 23px;
+  border-collapse: collapse;
+  border: 1px solid white;
+  font-size: 12px;
+  text-align: center;
+}
+
+#shopOrangeAmaryllis .shopAmeryllisInfo .quantityButton .quantity .icon-number i {
+  font-size: 13px;
+}
+
+#shopDesc-info-review .shopTitle .shopDescription {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border: 1px solid #dad7d7;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#shopDesc-info-review .shopTitle .shopInfo {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border: 1px solid #dad7d7;
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#shopDesc-info-review .shopTitle .shopReview {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border: 1px solid #dad7d7;
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#shopDesc-info-review .shopDesc {
+  border-top: 1px solid #dad7d7;
+  border-bottom: 1px solid #dad7d7;
+  margin-bottom: 3%;
+}
+
+#shopDesc-info-review .shopDesc .descCart {
+  margin-top: 2%;
+  padding: 3% 0;
+}
+
+#shopDesc-info-review .shopDesc .descCart .innerDesc {
+  margin-top: 2%;
+  font-size: 13px;
+  color: grey;
+}
+
+#shopDesc-info-review .shopInfo {
+  border-bottom: 1px solid #dad7d7;
+  border-top: 1px solid #dad7d7;
+}
+
+#shopDesc-info-review .shopInfo .infoCart {
+  padding: 3% 0;
+}
+
+#shopDesc-info-review .shopReview {
+  border-bottom: 1px solid #dad7d7;
+  border-top: 1px solid #dad7d7;
+}
+
+#shopDesc-info-review .shopReview button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 141px;
+  height: 50px;
+  background-color: #ec5555;
+  color: white;
+  border: solid #ec5555 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#shopDesc-info-review .shopReview button:hover {
+  background-color: red;
+}
+
+.tabActive {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #f55050;
+  color: white;
+}
+
+#shopRelatedProducts {
+  padding: 4% 0;
+}
+
+#shopRelatedProducts h3 {
+  font-size: 14px;
+  color: black;
+}
+
+#shopRelatedProducts .products .product {
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#shopRelatedProducts .products .product:hover .text {
+  opacity: 1;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#shopRelatedProducts .products .product:hover .price {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#shopRelatedProducts .products .product .text {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#shopRelatedProducts .products .product .image {
+  overflow: hidden;
+  position: relative;
+}
+
+#shopRelatedProducts .products .product .image .sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 29px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+#shopRelatedProducts .products .product .image .sale span {
+  color: black;
+}
+
+#shopRelatedProducts .products .product .image .sold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 29px;
+  background-color: black;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-align: center;
+  z-index: 10;
+}
+
+#shopRelatedProducts .products .product .image .sold span {
+  color: white;
+}
+
+#shopRelatedProducts .products .product .image:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#shopRelatedProducts .products .product .image img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 295px;
+  height: 380px;
+}
+
+#shopRelatedProducts .products .product .productName {
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+#shopRelatedProducts .products .product .productPrice {
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  color: grey;
+}
+
+#shopRelatedProducts .products .product .productPrice .price {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  right: 35px;
+}
+
+#entranceTabs {
+  background-color: #fafaf9;
+}
+
+#entranceTabs h1 {
+  padding-top: 4%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 55px;
+  padding-bottom: 4%;
+}
+
+#tabsUnderTitle .tabsLeftContent .shopTitle .tabService {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border: 1px solid #dad7d7;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#tabsUnderTitle .tabsLeftContent .shopTitle .tabShop {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border: 1px solid #dad7d7;
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#tabsUnderTitle .tabsLeftContent .shopTitle .tabProduct {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #dad7d7;
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#tabsUnderTitle .tabsLeftContent .service .shopDesc {
+  border: 1px solid #dad7d7;
+  border-bottom: 1px solid #dad7d7;
+  padding: 4%;
+}
+
+#tabsUnderTitle .tabsLeftContent .service .shopDesc p {
+  color: grey;
+  font-size: 13px;
+}
+
+#tabsUnderTitle .tabsLeftContent .shop .shopInfo {
+  border: 1px solid #dad7d7;
+  border-bottom: 1px solid #dad7d7;
+  padding: 4%;
+}
+
+#tabsUnderTitle .tabsLeftContent .shop .shopInfo p {
+  color: grey;
+  font-size: 13px;
+}
+
+#tabsUnderTitle .tabsLeftContent .product .shopReview {
+  border: 1px solid #dad7d7;
+  border-bottom: 1px solid #dad7d7;
+  padding: 4%;
+}
+
+#tabsUnderTitle .tabsLeftContent .product .shopReview p {
+  color: grey;
+  font-size: 13px;
+}
+
+#tabsUnderTitle .tabsRightContent .shopTitle .tabService {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border: 1px solid #dad7d7;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#tabsUnderTitle .tabsRightContent .shopTitle .tabShop {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border: 1px solid #dad7d7;
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#tabsUnderTitle .tabsRightContent .shopTitle .tabProduct {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #dad7d7;
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+#tabsUnderTitle .tabsRightContent .service .shopDesc {
+  border: 1px solid #dad7d7;
+  border-bottom: 1px solid #dad7d7;
+  padding: 4%;
+}
+
+#tabsUnderTitle .tabsRightContent .service .shopDesc p {
+  color: grey;
+  font-size: 13px;
+}
+
+#tabsUnderTitle .tabsRightContent .shop .shopInfo {
+  border: 1px solid #dad7d7;
+  border-bottom: 1px solid #dad7d7;
+  padding: 4%;
+}
+
+#tabsUnderTitle .tabsRightContent .shop .shopInfo p {
+  color: grey;
+  font-size: 13px;
+}
+
+#tabsUnderTitle .tabsRightContent .product .shopReview {
+  border: 1px solid #dad7d7;
+  border-bottom: 1px solid #dad7d7;
+  padding: 4%;
+}
+
+#tabsUnderTitle .tabsRightContent .product .shopReview p {
+  color: grey;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 993px) {
