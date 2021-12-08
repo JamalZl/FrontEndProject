@@ -414,7 +414,7 @@ header {
             top: 0;
             left:0%;
             height: 100vh;
-            background-color: rgb(207, 181, 62);
+            background-color: white;
             width: 375px;
             display: none;
 
@@ -426,7 +426,7 @@ header {
 
                 span {
                     i {
-                        font-size: 12px;
+                        font-size: 10px;
                         position: relative;
                         left: 1px;
                         bottom: 1px;
@@ -549,8 +549,6 @@ header {
                                 list-style: none;
 
                                 .menuBlogPostLi {
-
-
                                     .menuBlog-inner-post {
                                         display: none;
 
@@ -570,10 +568,9 @@ header {
                         }
                     }
 
-
                     a {
                         text-decoration: none;
-                        color: red;
+                        color: black;
                     }
                 }
             }
@@ -1243,16 +1240,17 @@ footer {
                 border: solid 1px;
 
                 .icon-number {
-                    input {
+                    span {
                         width: 23px;
                         border-collapse: collapse;
                         border: 1px solid white;
-                        font-size: 12px;
+                        font-size: 15px;
                         text-align: center;
                     }
 
                     i {
-                        font-size: 13px;
+                        font-size: 16px;
+                        cursor: pointer;
                     }
                 }
 
@@ -1350,8 +1348,41 @@ footer {
 
 .tabActive {
     transition: 0.3s;
-    background-color: rgb(245, 80, 80);
+    background-color: rgb(235, 70, 70);
     color: white;
+
+    &:hover {
+        background-color: rgb(235, 70, 70);
+        color: white;
+    }
+}
+
+.tabActiveRight {
+    background-color: rgb(235, 70, 70);
+    color: white;
+
+    &:hover {
+        color: white !important;
+        background-color: rgb(235, 70, 70);
+    }
+}
+
+.tabActiveCenter {
+    color: rgb(235, 70, 70);
+
+    &:hover {
+        color: rgb(235, 70, 70) !important;
+    }
+}
+
+.tabActiveBottom {
+    background-color: rgb(235, 70, 70);
+    color: white;
+
+    &:hover {
+        color: white !important;
+        background-color: rgb(235, 70, 70);
+    }
 }
 
 #shopRelatedProducts {
@@ -1484,9 +1515,26 @@ footer {
     }
 }
 
-#tabsUnderTitle {
+#tabsTop {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid rgb(194, 192, 192);
+    padding-bottom: 5%;
+
     .tabsLeftContent {
+        .myCart {
+            &:hover {
+                background-color: rgb(235, 70, 70);
+                color: white;
+            }
+        }
+
         .shopTitle {
+            display: flex;
+            justify-content: flex-start;
+
             .tabService {
                 font-size: 14px;
                 display: flex;
@@ -1524,10 +1572,12 @@ footer {
         }
 
         .service {
+
             .shopDesc {
                 border: 1px solid rgb(218, 215, 215);
                 border-bottom: 1px solid rgb(218, 215, 215);
                 padding: 4%;
+                width: 100%;
 
                 p {
                     color: grey;
@@ -1539,6 +1589,7 @@ footer {
         .shop {
 
             .shopInfo {
+                width: 100%;
                 border: 1px solid rgb(218, 215, 215);
                 border-bottom: 1px solid rgb(218, 215, 215);
                 padding: 4%;
@@ -1551,7 +1602,9 @@ footer {
         }
 
         .product {
+
             .shopReview {
+                width: 100%;
                 border: 1px solid rgb(218, 215, 215);
                 border-bottom: 1px solid rgb(218, 215, 215);
                 padding: 4%;
@@ -1565,7 +1618,17 @@ footer {
     }
 
     .tabsRightContent {
+        .myCartRight {
+            &:hover {
+                color: rgb(235, 70, 70);
+            }
+        }
+
         .shopTitle {
+
+            display: flex;
+            justify-content: flex-start;
+
             .tabService {
                 font-size: 14px;
                 display: flex;
@@ -1604,6 +1667,7 @@ footer {
 
         .service {
             .shopDesc {
+                width: 100%;
                 border: 1px solid rgb(218, 215, 215);
                 border-bottom: 1px solid rgb(218, 215, 215);
                 padding: 4%;
@@ -1618,6 +1682,7 @@ footer {
         .shop {
 
             .shopInfo {
+                width: 100%;
                 border: 1px solid rgb(218, 215, 215);
                 border-bottom: 1px solid rgb(218, 215, 215);
                 padding: 4%;
@@ -1631,9 +1696,207 @@ footer {
 
         .product {
             .shopReview {
+                width: 100%;
                 border: 1px solid rgb(218, 215, 215);
                 border-bottom: 1px solid rgb(218, 215, 215);
                 padding: 4%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+#tabsCenterFullWidth {
+    margin: 5%;
+
+    .tabsCenterContent {
+        .myCartCenter {
+            &:hover {
+                color: rgb(235, 70, 70);
+            }
+        }
+
+        .shopTitle {
+
+            display: flex;
+            justify-content: flex-start;
+
+            .tabService {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                cursor: pointer;
+            }
+
+            .tabShop {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                cursor: pointer;
+            }
+
+            .tabProduct {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+            }
+        }
+
+        .service {
+            .shopDesc {
+                width: 100%;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                border-left: none;
+                border-right: none;
+                padding: 4%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .shop {
+
+            .shopInfo {
+                width: 100%;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+                border-left: none;
+                border-right: none;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .product {
+            .shopReview {
+                width: 100%;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+                border-left: none;
+                border-right: none;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+#tabsBottom {
+    margin: 7% 0;
+
+    .tabsBottomContent {
+        display: flex;
+        flex-direction: row;
+
+        .myCart {
+            &:hover {
+                background-color: rgb(235, 70, 70);
+                color: white;
+            }
+        }
+
+        .shopTitle {
+
+            .tabService {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 150px;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: none;
+                cursor: pointer;
+            }
+
+            .tabShop {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 150px;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: none;
+                cursor: pointer;
+            }
+
+            .tabProduct {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 150px;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: solid 1px rgb(218, 215, 215);
+                ;
+                cursor: pointer;
+
+            }
+        }
+
+        .service {
+
+            .shopDesc {
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+                width: 100%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .shop {
+
+            .shopInfo {
+                width: 100%;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+
+                p {
+                    color: grey;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .product {
+
+            .shopReview {
+                width: 100%;
+                border: 1px solid rgb(218, 215, 215);
+                border-bottom: 1px solid rgb(218, 215, 215);
+                padding: 4%;
+
                 p {
                     color: grey;
                     font-size: 13px;
@@ -1644,6 +1907,506 @@ footer {
 }
 
 
+#entranceAccordion {
+    background-color: rgb(250, 250, 249);
+
+    h1 {
+        padding-top: 4%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 55px;
+        padding-bottom: 4%;
+    }
+}
+
+#topAccordion {
+    .myAccordions {
+        .myAccordion {
+            margin-top: 1%;
+
+            .title-icon {
+                border: solid 1px rgb(172, 166, 166);
+                padding: 2%;
+                font-size: 13px;
+
+                .icon {
+                    color: black;
+                }
+
+                .title {
+                    margin-left: 2%;
+                    color: black;
+                }
+            }
+
+            .article {
+                padding: 4% 0;
+            }
+        }
+    }
+
+    .accordionActive {
+        background-color: rgb(233, 69, 69);
+
+        .icon {
+            i {
+                color: white;
+            }
+        }
+
+        .title {
+            span {
+                color: white;
+            }
+
+        }
+    }
+}
+
+#entranceShopList {
+    background-color: rgb(250, 250, 249);
+
+    h1 {
+        padding-top: 4%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 55px;
+        padding-bottom: 4%;
+    }
+
+}
+
+#shopListProducts {
+    margin: 7% 0;
+
+    .cards {
+        justify-content: space-between;
+
+        .card {
+            cursor: pointer;
+            border: none !important;
+            position: relative;
+
+            &:hover {
+                img {
+                    opacity: 0.2;
+                    transition: 0.3s;
+                }
+
+                .text {
+                    display: block !important;
+                }
+            }
+
+            .img-text {
+                img {
+                    transition: 0.3s;
+                }
+
+                .text {
+                    display: none;
+
+                    .mybtn {
+
+                        position: absolute;
+                        top: 30%;
+                        left: 20%;
+
+                        button {
+                            background-color: red;
+                            border: red;
+                            border-radius: 0 !important;
+                            width: 200px;
+                            height: 50px;
+                            font-size: 13px;
+                        }
+
+                        p {
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#carouselShopList {
+    margin: 15% 0;
+
+    span {
+        font-size: 14px;
+        font-family: ExtraLight;
+    }
+
+    .myCarouselShopList {
+        .myItem {
+            .product {
+                width: 100%;
+
+                &:hover .text {
+                    opacity: 1;
+                    transform: translateX(10px);
+                    transition: 0.3s;
+                }
+
+                &:hover .price {
+                    transform: translateX(100px);
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+
+                .text {
+                    transform: translateX(-100px);
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+
+                cursor: pointer;
+                margin-top: 15px;
+
+                .image {
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+
+                    .sale {
+                        span {
+                            color: black;
+                        }
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 29px;
+                        background-color: white;
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        text-align: center;
+                        z-index: 10;
+                    }
+
+                    .sold {
+                        span {
+                            color: white;
+                        }
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 29px;
+                        background-color: black;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                        text-align: center;
+                        z-index: 10;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    img {
+                        transition: 0.3s;
+                        height: 380px;
+                        width: 100%;
+                    }
+                }
+
+                .productName {
+                    font-size: 13px;
+                    margin-top: 10px;
+                    text-align: center;
+                    letter-spacing: 1.5px;
+
+
+                }
+
+                .productPrice {
+                    width: 100%;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    text-align: center;
+                    color: grey;
+
+                    .price {
+                        transition: 0.3s;
+                        position: relative;
+                        right: 35px;
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+#miniProducts {
+    margin-bottom: 8%;
+
+    .miniProducts {
+        .miniProduct {
+            .image {
+
+                img {
+                    height: 191px;
+                    overflow: hidden;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+
+            .category-price {
+                margin-top: 15%;
+                text-align: center;
+
+                .productCategory {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 14px;
+                    }
+                }
+
+                .price {
+                    margin-top: 3%;
+                    color: grey;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+#entranceProgressBar {
+    background-color: rgb(250, 250, 249);
+
+    h1 {
+        padding-top: 4%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 55px;
+        padding-bottom: 4%;
+    }
+}
+
+#firstProgressBar {
+    margin-bottom: 200px;
+
+    .allBars {
+        .bar1 {
+            .firstBar {
+                display: flex;
+
+                .barContent {
+                    width: 460px;
+                    height: 4px;
+                    margin-top: 9px;
+                    border-radius: 12px;
+                    background-color: black;
+
+                    .loadingBar {
+                        height: 4px;
+                        background-color: red;
+                    }
+                }
+
+                p {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .bar2 {
+            .secondBar {
+                display: flex;
+
+                .barContent {
+                    width: 460px;
+                    height: 4px;
+                    margin-top: 9px;
+                    border-radius: 12px;
+                    background-color: black;
+
+                    .loadingBar {
+
+                        height: 4px;
+                        background-color: red;
+                    }
+                }
+
+                p {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .bar3 {
+            .thirdBar {
+                display: flex;
+
+                .barContent {
+                    width: 460px;
+                    height: 4px;
+                    margin-top: 9px;
+                    border-radius: 12px;
+                    background-color: black;
+
+                    .loadingBar {
+                        height: 4px;
+                        background-color: red;
+                    }
+                }
+
+                p {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+#secondProgressBar {
+    margin: 250px 0;
+
+    .allBarsFooter {
+
+        .bar1Footer {
+
+
+            .firstBar {
+                display: flex;
+
+                .barContent {
+                    width: 100%;
+                    height: 4px;
+                    margin-top: 9px;
+                    border-radius: 12px;
+
+
+                    background-color: black;
+
+                    .loadingBar {
+
+                        height: 4px;
+                        background-color: red;
+                    }
+                }
+
+                p {
+                    margin-left: 20px;
+
+
+                }
+            }
+
+
+        }
+
+        .bar2Footer {
+
+
+            .secondBar {
+                display: flex;
+
+                .barContent {
+                    width: 100%;
+                    height: 4px;
+                    margin-top: 9px;
+                    border-radius: 12px;
+                    background-color: black;
+
+                    .loadingBar {
+
+                        height: 4px;
+                        background-color: red;
+                    }
+                }
+
+                p {
+                    margin-left: 20px;
+                }
+            }
+
+
+        }
+
+        .bar3Footer {
+
+
+            .thirdBar {
+                display: flex;
+
+                .barContent {
+                    width: 100%;
+                    height: 4px;
+                    margin-top: 9px;
+                    border-radius: 12px;
+                    background-color: black;
+
+                    .loadingBar {
+
+                        height: 4px;
+                        background-color: red;
+                    }
+                }
+
+                p {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+/////////goToTop////////////
+.goUp {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(240, 80, 80);
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+
+    &:hover {
+        background-color: red;
+    }
+
+    &:hover .icon1 {
+        transform: translateY(-50px);
+    }
+
+    &:hover .icon2 {
+        transform: translateY(0px);
+    }
+
+    .icon2 {
+        transform: translateY(50px);
+    }
+
+    .icon {
+        position: absolute;
+        font-size: 15px;
+        transition: 0.2s;
+        color: white;
+
+    }
+}
+
+//////////goToTop///////
 @media screen and(max-width:993px) {
     header {
         nav {

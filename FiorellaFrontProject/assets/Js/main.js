@@ -6,7 +6,7 @@ $(document).ready(function () {
     })
     $(".closeX i").click(function () {
         $(".menu").removeClass("animate__fadeInRight")
-        $(".menu").addClass("animate__fadeOutRight")
+        $(".menu").addClass("animate__fadeOutLeft")
     })
     $(".menuHomeLi a").click(function () {
         $(".menuHome").slideToggle();
@@ -58,4 +58,18 @@ $(document).ready(function () {
         $(".menuBlog-inner-post").slideToggle();
         $(".menuBlogPostLi i").toggleClass("myRotate");
     })
+
+    ///////////goToTop///////////
+    $(window).scroll(function () {
+        if (window.scrollY >= 650) {
+            $(".goUp").removeClass("d-none")
+        }
+        if (window.scrollY <= 650) {
+            $(".goUp").addClass("d-none")
+        }
+    })
+    $(".goUp").click(function () {
+        $(window).scrollTop(0);
+    })
+    ///////////goToTop////////////
 })
