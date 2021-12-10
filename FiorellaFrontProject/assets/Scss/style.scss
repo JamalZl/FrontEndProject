@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 ul {
     margin: 0px;
     padding: 0px;
@@ -25,6 +29,7 @@ header {
 
             .search-cart {
                 cursor: pointer;
+
                 .cart {
                     height: 100%;
                     display: flex;
@@ -33,7 +38,7 @@ header {
                     i {
                         position: relative;
 
-                        .basketPrice {
+                        .basketProductCount {
                             position: absolute;
                             z-index: 12;
                             top: -14px;
@@ -57,25 +62,47 @@ header {
                         right: 60px;
                         z-index: 15;
                         background-color: white;
-                        .basketProducts{
+                        max-height: 450px;
+                        overflow-y: scroll;
+
+                        .basketProducts {
                             list-style: none;
-                            li{
+
+                            li {
                                 display: flex;
-                                justify-content: space-between;
-                                margin: 10px 10px  10px;
-                                .name-price{
-                                    margin-left: 5px;
-                                }
-                                .basketImage{
-                                    img{
-                                        width: 65px;
+                                justify-content: space-evenly;
+
+                                .name-price {
+                                    width: 190px;
+
+                                    p {
+                                        font-size: 12px;
+                                        padding-top: 10px;
+                                    }
+
+                                    span {
+                                        font-size: 11px;
+                                        box-sizing: border-box;
+                                        margin-bottom: 35px;
+
+                                        .x {
+                                            margin-left: 5px;
+                                        }
                                     }
                                 }
-                                i{
+
+                                .basketImage {
+                                    img {
+                                        width: 50px;
+                                        margin: 10px 10px 15px 15px;
+                                    }
+                                }
+
+                                i {
                                     font-size: 10px;
-                                    margin-left: 17px;
-                                    margin-top: 6px;
-                                    
+                                    margin-top: 30px;
+                                    margin-right: 29px;
+
                                 }
                             }
                         }
@@ -91,7 +118,7 @@ header {
 
                             .viewCart-checkout {
                                 display: flex;
-                                justify-content:space-between;
+                                justify-content: space-between;
                                 width: 250px;
                                 padding-bottom: 25px;
 
@@ -120,10 +147,6 @@ header {
                             }
                         }
                     }
-
-                    &:hover .basketView {
-                        display: block;
-                    }
                 }
 
                 .text {
@@ -133,6 +156,9 @@ header {
                     padding-left: 15px;
                 }
 
+                &:hover .basketView {
+                    display: block;
+                }
             }
 
             .nav-links {
@@ -145,23 +171,34 @@ header {
                     padding: 0;
                     list-style: none;
 
-                    .homeLi {
-                        &::before {
-                            content: '';
-                            width: 0px;
-                        }
+                    // .homeLi {
+                    //     &::before {
+                    //         content: '';
+                    //         transition: 0.3s;
+                    //         width: 0;
+                    //     }
 
-                        &:hover {
-                            &::before {
-                                content: '';
-                                width: 45px;
-                                height: 1px;
-                                background-color: grey;
-                                position: absolute;
-                                top: 67px;
-                                transition: width .3s ease-in-out;
-                            }
-                        }
+                    //     &:hover {
+                    //         &::before {
+                    //             content: '';
+                    //             width: 45px;
+                    //             height: 1px;
+                    //             background-color: grey;
+                    //             position: absolute;
+                    //             top: 67px;
+                    //             transition: width .3s ease-in-out;
+                    //         }
+                    //     }
+                    // }
+                    li {
+                        display: inline-block;
+                        padding: 2px;
+                    }
+
+                    a:hover {
+                        border-bottom: 1px solid Blue;
+
+
                     }
 
                     a {
@@ -296,7 +333,7 @@ header {
 
                                 li {
 
-                                    margin-top: 10px;
+                                    margin-top: 7px;
 
                                     a {
                                         text-decoration: none;
@@ -309,14 +346,15 @@ header {
                             .portfolio-inner-layouts {
 
                                 background-color: white;
-                                height: 180px;
-                                opacity: 0;
+                                height: 250px;
+                                visibility: hidden;
                                 position: absolute;
                                 top: 50%;
                                 z-index: 2;
                                 left: 200px;
                                 overflow: hidden;
-                                width: 200px;
+                                width: 230px;
+                                transition: 0.3s;
                                 // margin-left: -23px;
 
                                 ul {
@@ -324,7 +362,7 @@ header {
                                     list-style: none;
 
                                     li {
-                                        padding-top: 8px;
+                                        padding-top: 7px;
                                         margin-top: 0px;
                                         height: 20%;
 
@@ -339,23 +377,23 @@ header {
                             }
 
                             .portfolioLayoutsLi:hover .portfolio-inner-layouts {
-                                height: 180px;
-                                transition: 0.5s;
-                                transition-delay: 0.1s;
-                                opacity: 1;
+                                max-height: 180px;
+                                transition: 0.3s;
+                                visibility: visible;
 
                             }
 
                             .portfolio-inner-single {
                                 background-color: white;
                                 height: 180px;
-                                opacity: 0;
                                 position: absolute;
+                                visibility: hidden;
                                 top: 70%;
                                 z-index: 2;
                                 left: 200px;
                                 overflow: hidden;
                                 width: 200px;
+                                transition: 0.3s;
                                 // margin-left: -23px;
 
                                 ul {
@@ -381,7 +419,7 @@ header {
                                 height: 180px;
                                 transition: 0.5s;
                                 transition-delay: 0.1s;
-                                opacity: 1;
+                                visibility: visible;
                             }
 
                         }
@@ -424,7 +462,7 @@ header {
                             .blog-inner-post {
                                 background-color: white;
                                 height: 230px;
-                                opacity: 0;
+                                visibility: hidden;
                                 position: absolute;
                                 top: 50%;
                                 z-index: 2;
@@ -453,9 +491,8 @@ header {
                             }
 
                             .blogPostLi:hover .blog-inner-post {
-                                transition: 0.5s;
-                                transition-delay: 0.1s;
-                                opacity: 1;
+                                transition: 0.3s;
+                                visibility: visible;
                             }
                         }
 
@@ -508,10 +545,12 @@ header {
             display: none;
             justify-content: end;
             align-items: center;
+            position: relative;
+            z-index: 1500;
         }
 
         .menu {
-            z-index: 10;
+            z-index: 10000;
 
             .closeX {
                 padding: 10px;
@@ -520,7 +559,7 @@ header {
 
             position: fixed;
             top: 0;
-            left:0%;
+            right:0;
             height: 100vh;
             background-color: white;
             width: 375px;
@@ -532,9 +571,17 @@ header {
             .menu-nav-links {
                 padding: 28px;
 
+                #menuNavLinksUl {
+                    li {
+                        a {
+                            font-size: 11px;
+                        }
+                    }
+                }
+
                 span {
                     i {
-                        font-size: 10px;
+                        font-size: 8px;
                         position: relative;
                         left: 1px;
                         bottom: 1px;
@@ -555,7 +602,7 @@ header {
 
                             li {
                                 a {
-                                    font-size: 13px;
+                                    font-size: 12px;
                                 }
                             }
                         }
@@ -688,6 +735,7 @@ header {
 
 main {
 
+    /////Home
     #flowers3 {
 
         position: relative;
@@ -705,8 +753,6 @@ main {
                     animation: linear 0s normal none infinite running zoom;
 
                     animation-duration: 6s;
-
-
                     width: 100%;
                     height: 477px;
                 }
@@ -714,12 +760,10 @@ main {
                 @keyframes zoom {
                     from {
                         transform: scale(1);
-                        opacity: 0.4;
                     }
 
                     to {
                         transform: scale(1.12);
-                        opacity: 1;
                     }
                 }
             }
@@ -819,6 +863,10 @@ main {
 
         .title-filter {
             .productTitle {
+                #productListCategory {
+                    display: none;
+                }
+
                 ul {
 
                     margin-bottom: 20px;
@@ -830,6 +878,25 @@ main {
                             text-decoration: none;
                             color: grey;
                             font-size: 12px;
+                        }
+                    }
+                }
+
+                #dropDownCategory {
+                    width: 200px;
+                    height: 300px;
+                    background-color: white;
+                    position: relative;
+                    bottom: 15px;
+                    z-index: 15265541;
+                    display: none;
+                    max-height: 160px;
+
+                    .flowerTypes {
+                        li {
+                            a {
+                                color: black;
+                            }
                         }
                     }
                 }
@@ -1204,6 +1271,7 @@ main {
     }
 }
 
+/////Home/////
 
 footer {
     .footer {
@@ -1254,6 +1322,7 @@ footer {
     }
 }
 
+////ProductList
 #shopproductNameLis {
     background-color: rgb(250, 250, 249);
 
@@ -1454,6 +1523,10 @@ footer {
     }
 }
 
+/////ProductList/////
+
+
+/////Tabs/////
 .tabActive {
     transition: 0.3s;
     background-color: rgb(235, 70, 70);
@@ -2014,7 +2087,10 @@ footer {
     }
 }
 
+/////Tabs/////
 
+
+/////Accordios/////
 #entranceAccordion {
     background-color: rgb(250, 250, 249);
 
@@ -2027,49 +2103,155 @@ footer {
 }
 
 #topAccordion {
-    .myAccordions {
-        .myAccordion {
-            margin-top: 1%;
+    margin-bottom: 20%;
+    .accordionsLeft {
+        .accordion {
+            margin-top: 15px;
 
             .title-icon {
-                border: solid 1px rgb(172, 166, 166);
-                padding: 2%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 55px;
+                border: 1px solid rgb(211, 211, 211);
+                padding: 20px;
                 font-size: 13px;
-
-                .icon {
-                    color: black;
-                }
-
-                .title {
-                    margin-left: 2%;
-                    color: black;
-                }
             }
 
-            .article {
-                padding: 4% 0;
+            .accordionDesc {
+                line-height: 1.8;
+                padding: 20px 0;
+            }
+        }
+
+        .accordionActive {
+            background-color: rgb(245, 68, 68);
+
+            .title {
+                color: white;
+            }
+
+            .icon {
+                color: white;
             }
         }
     }
 
-    .accordionActive {
-        background-color: rgb(233, 69, 69);
 
-        .icon {
-            i {
-                color: white;
+
+    .accordionsRight {
+        .accordionRight {
+            margin-top: 15px;
+
+            .title-iconRight {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 55px;
+                border: 1px solid rgb(211, 211, 211);
+                padding: 20px;
+                font-size: 13px;
+            }
+
+            .accordionDescRight {
+                line-height: 1.8;
+                padding: 20px 0;
+            }
+
+            .accordionActiveRight {
+                background-color: rgb(245, 68, 68);
+
+                .titleRight {
+                    color: white;
+                }
+
+                .iconRight {
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+}
+
+#bottomAccordion {
+    margin-top: 20%;
+    .bottomAccordionsLeft {
+        .bottomAccordion {
+            margin-top: 15px;
+
+            .bottomTitle-icon {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 55px;
+                border-bottom: 1px solid rgb(211, 211, 211);
+                padding: 20px;
+                font-size: 13px;
+                
+            }
+
+            .bottomAccordionDesc {
+                line-height: 1.8;
+                padding: 20px 0;
             }
         }
 
-        .title {
-            span {
-                color: white;
+        .bottomAccordionActive {
+
+            .title {
+                color: red;
             }
 
+            .icon {
+                color: red;
+            }
+        }
+    }
+
+
+
+    .bottomAccordionsRight {
+        .bottomAccordionRight {
+            margin-top: 15px;
+
+            .bottomTitle-iconRight {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 55px;
+                border-bottom: 1px solid rgb(211, 211, 211);
+                padding: 20px;
+                font-size: 13px;
+            }
+
+            .bottomAccordionDescRight {
+                line-height: 1.8;
+                padding: 20px 0;
+            }
+
+            .bottomAccordionActiveRight {
+
+                .titleRight {
+                    color: red;
+                }
+
+                .iconRight {
+                    color: red;
+                }
+            }
         }
     }
 }
 
+/////Accordions/////
+
+/////ShopList
 #entranceShopList {
     background-color: rgb(250, 250, 249);
 
@@ -2107,6 +2289,7 @@ footer {
             .img-text {
                 img {
                     transition: 0.3s;
+                    width: 100%;
                 }
 
                 .text {
@@ -2294,6 +2477,10 @@ footer {
     }
 }
 
+/////ShopList/////
+
+
+/////ProgressBar/////
 #entranceProgressBar {
     background-color: rgb(250, 250, 249);
 
@@ -2474,6 +2661,9 @@ footer {
     }
 }
 
+/////Pregressbar/////
+
+
 /////////goToTop////////////
 .goUp {
     width: 50px;
@@ -2515,7 +2705,7 @@ footer {
 }
 
 //////////goToTop///////
-@media screen and(max-width:993px) {
+@media screen and(max-width:768px) {
     header {
         nav {
             .logo-links-cart {
@@ -2537,6 +2727,7 @@ footer {
         }
     }
 
+
     header {
         nav {
             .menu-icon {
@@ -2545,6 +2736,962 @@ footer {
         }
     }
 
+    #tabsTop {
+        display: flex;
+
+        .tabsLeftContent {
+            width: 47%;
+
+            .shopTitle {
+                display: block;
+                width: 100%;
+
+                .myCart {
+                    width: 100%;
+                    height: 55px;
+                    border-left: 1px solid rgb(218, 215, 215);
+                }
+            }
+
+        }
+
+        .tabsRightContent {
+            width: 47%;
+
+            .shopTitle {
+                display: block;
+                width: 100%;
+
+                .myCartRight {
+                    width: 100%;
+                    height: 55px;
+                    border-left: 1px solid rgb(218, 215, 215);
+                }
+            }
+        }
+    }
+
+    #tabsCenterFullWidth {
+        .tabsCenterContent {
+            .shopTitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                margin-left: 25px;
+
+                .myCartCenter {
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    #tabsBottom {
+        width: 100%;
+
+        .tabsBottomContent {
+            display: block;
+            width: 100%;
+
+            .shopTitle {
+                display: block;
+
+
+                .myCartBottom {
+
+                    width: 100%;
+                    border: 1px solid rgb(218, 215, 215);
+                    border-top: none;
+                }
+
+                .tabService {
+                    border-top: 1px solid rgb(218, 215, 215);
+                }
+            }
+        }
+
+    }
+
+    footer {
+        .footer {
+            .topFooter {
+                display: flex !important;
+                flex-wrap: wrap;
+
+                ul {
+                    width: 34%;
+                }
+            }
+
+            .bottomFooter {
+                text-align: center;
+                display: block !important;
+
+                .rights {
+                    font-size: 10px;
+                }
+
+                .payments {
+                    .footerImage {
+                        img {
+                            width: 100px;
+                        }
+                    }
+                }
+
+                .socialMedia {
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    #firstProgressBar {
+        .allBars {
+            margin-top: 50px;
+        }
+    }
+
+    #firstProgressBar {
+        width: 100%;
+
+        .myCol {
+            .allBars {
+                margin-top: 50px;
+                width: 100%;
+
+                .firstBar {
+                    width: 100%;
+
+                    .barContent {
+                        width: 100%;
+
+                        .loadingBar {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .secondBar {
+                    width: 100%;
+
+                    .barContent {
+                        width: 100%;
+
+                        .loadingBar {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .thirdBar {
+                    width: 100%;
+
+                    .barContent {
+                        width: 100%;
+
+                        .loadingBar {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #shopListProducts {
+        .cards {
+            .row {
+                .card {
+                    width: 295;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    #shopRelatedProducts {
+        .row {
+            .products {
+                flex-wrap: wrap;
+                padding: 0;
+
+                .product {
+                    .image {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    #shopDesc-info-review {
+        padding: 0;
+
+        .shopTitle {
+            .myCart {
+                border-left: 1px solid rgb(218, 215, 215);
+            }
+        }
+    }
+
+    #shopOrangeAmaryllis {
+        .shopAmeryllisImages {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .smallImages {
+                display: flex;
+                justify-content: space-around;
+                margin-left: 35px;
+            }
+
+            .bigImage {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 800px;
+                }
+            }
+        }
+    }
+
+    #flowers3 {
+        .flowersInfo {
+            .Infos {
+                .titleInfo {
+                    span {
+                        font-size: 33px !important;
+                    }
+                }
+
+                .descInfo {
+                    width: 250px;
+                    overflow: hidden;
+                }
+            }
+
+            overflow: hidden;
+
+
+        }
+
+        .signatureInfo {
+            img {
+                width: 180px !important;
+            }
+        }
+    }
+
+    #video {
+        .video-article {
+            display: flex;
+            flex-direction: column;
+
+            .article {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    #flowerExpert {
+        .info-experts {
+            .experts {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    #myParallax {
+        .parallaxClass {
+            .parallaxText {
+                h2 {
+                    font-size: 20px !important;
+                }
+            }
+
+            .registration {
+                width: 370px;
+            }
+        }
+    }
+
+    #blog {
+        .blogImages {
+            display: flex !important;
+            flex-direction: column !important;
+
+            .blogImage {
+                .image {
+                    display: flex;
+                    justify-content: center;
+
+                    .date {
+                        margin-right: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    #productList {
+        .title-filter {
+            .productTitle {
+                #productListCategory {
+                    display: none !important;
+                }
+
+                width: 100%;
+
+                .flowerTypes {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:376px) {
+    #tabsTop {
+        .tabsLeftContent {
+            width: 100%;
+        }
+
+        .tabsRightContent {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    footer {
+        .footer {
+            .topFooter {
+                display: block !important;
+            }
+
+            .bottomFooter {
+                text-align: center;
+                display: block !important;
+
+                .rights {
+                    font-size: 8px;
+                }
+
+                .payments {
+                    .footerImage {
+                        img {
+                            width: 100px;
+                        }
+                    }
+                }
+
+                .socialMedia {
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #entranceShopList {
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    #shopListProducts {
+        width: 100%;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    #miniProducts {
+        .miniProducts {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .miniProduct {
+                width: 300px;
+
+                .image {
+                    padding: 0;
+                    margin: 0;
+
+                    img {
+                        margin-left: 25px;
+                        width: 250px;
+                        height: 280px;
+                    }
+                }
+
+                .category-price {
+                    margin-top: 8px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    #shopproductNameLis {
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    #shopOrangeAmaryllis {
+
+        .row {
+            display: block !important;
+
+            .shopAmeryllisImages {
+                display: flex !important;
+                flex-direction: column-reverse !important;
+
+                .bigImage {
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 14px;
+
+                    img {
+                        width: 290px;
+                        height: 350px;
+                    }
+                }
+
+                .smallImages {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+            }
+
+            .shopAmeryllisInfo {
+                .title {
+                    h2 {
+                        font-size: 30px !important;
+                    }
+                }
+
+                width: 100% !important;
+                left: 0% !important;
+                margin-bottom: 25px;
+            }
+
+        }
+    }
+
+    #shopRelatedProducts {
+        .row {
+            .products {
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    #flowers3 {
+        .imagesSlide {
+            .imgScale {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .flowersInfo {
+            width: 220px !important;
+
+            .Infos {
+                .descInfo {
+                    display: none !important;
+                }
+
+                .titleInfo {
+                    span {
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #productList {
+        .title-filter {
+            .productTitle {
+                #productListCategory {
+                    display: block !important;
+                }
+
+                width: 100%;
+
+                #dropDownCategory .flowerTypes {
+                    display: block !important;
+                    width: 100%;
+                }
+
+                .flowerTypes {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    #video {
+        .video-article {
+
+            .videoImg {
+
+                .icon {
+                    i {
+                        font-size: 50px;
+                    }
+                }
+
+                img {
+                    width: 300px !important;
+                    height: 194px !important;
+                }
+            }
+
+            .article {
+                .title {
+                    margin-top: 20px;
+
+                    h5 {
+                        font-size: 25px !important;
+                        text-align: justify;
+                    }
+                }
+
+                .desc {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #flowerExpert {
+        .info-experts {
+            .experts {
+                display: flex;
+                justify-content: center !important;
+            }
+        }
+    }
+
+    #myParallax {
+        .parallaxClass {
+            .registration {
+                width: 290px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    width: 290px;
+                }
+
+                button {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    #blog {
+        .blogImages {
+            .blogImage {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .image {
+                    width: 300px;
+                    height: 191px;
+
+                    .date {
+                        position: absolute;
+                        left: 50px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and(max-width:992px) {
+    header {
+        nav {
+            .logo-links-cart {
+                .nav-links {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    header {
+        nav {
+            .logo-links-cart {
+                .search-cart {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+
+    header {
+        nav {
+            .menu-icon {
+                display: flex;
+            }
+        }
+    }
+
+    #tabsTop {
+        display: flex;
+
+        .tabsLeftContent {
+            width: 47%;
+
+            .shopTitle {
+                display: block;
+                width: 100%;
+
+                .myCart {
+                    width: 100%;
+                    height: 55px;
+                    border-left: 1px solid rgb(218, 215, 215);
+                }
+            }
+
+        }
+
+        .tabsRightContent {
+            width: 47%;
+
+            .shopTitle {
+                display: block;
+                width: 100%;
+
+                .myCartRight {
+                    width: 100%;
+                    height: 55px;
+                    border-left: 1px solid rgb(218, 215, 215);
+                }
+            }
+        }
+    }
+
+    #tabsCenterFullWidth {
+        .tabsCenterContent {
+            .shopTitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                margin-left: 25px;
+
+                .myCartCenter {
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    #tabsBottom {
+        width: 100%;
+
+        .tabsBottomContent {
+            display: block;
+            width: 100%;
+
+            .shopTitle {
+                display: block;
+
+
+                .myCartBottom {
+
+                    width: 100%;
+                    border: 1px solid rgb(218, 215, 215);
+                    border-top: none;
+                }
+
+                .tabService {
+                    border-top: 1px solid rgb(218, 215, 215);
+                }
+            }
+        }
+
+    }
+
+    footer {
+        .footer {
+            .topFooter {
+                display: flex !important;
+                flex-wrap: wrap;
+
+                ul {
+                    width: 34%;
+                }
+            }
+
+            .bottomFooter {
+                text-align: center;
+                display: block !important;
+
+                .rights {
+                    font-size: 10px;
+                }
+
+                .payments {
+                    .footerImage {
+                        img {
+                            width: 100px;
+                        }
+                    }
+                }
+
+                .socialMedia {
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    #firstProgressBar {
+        .allBars {
+            margin-top: 50px;
+        }
+    }
+
+    #firstProgressBar {
+        width: 100%;
+
+        .myCol {
+            .allBars {
+                margin-top: 50px;
+                width: 100%;
+
+                .firstBar {
+                    width: 100%;
+
+                    .barContent {
+                        width: 100%;
+
+                        .loadingBar {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .secondBar {
+                    width: 100%;
+
+                    .barContent {
+                        width: 100%;
+
+                        .loadingBar {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .thirdBar {
+                    width: 100%;
+
+                    .barContent {
+                        width: 100%;
+
+                        .loadingBar {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #shopListProducts {
+        .cards {
+            .row {
+                .card {
+                    width: 295;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    #shopRelatedProducts {
+        .row {
+            .products {
+                flex-wrap: wrap;
+                padding: 0;
+
+                .product {
+                    .image {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    #shopDesc-info-review {
+        padding: 0;
+
+        .shopTitle {
+            .myCart {
+                border-left: 1px solid rgb(218, 215, 215);
+            }
+        }
+    }
+
+    #shopOrangeAmaryllis {
+        .shopAmeryllisImages {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .smallImages {
+                display: flex;
+                justify-content: space-around;
+                margin-left: 35px;
+            }
+
+            .bigImage {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 800px;
+                }
+            }
+        }
+    }
+
+    #flowers3 {
+        .flowersInfo {
+            .Infos {
+                .titleInfo {
+                    span {
+                        font-size: 33px !important;
+                    }
+                }
+
+                .descInfo {
+                    width: 250px;
+                    overflow: hidden;
+                }
+            }
+
+            overflow: hidden;
+
+
+        }
+
+        .signatureInfo {
+            img {
+                width: 180px !important;
+            }
+        }
+    }
+
+    #video {
+        .video-article {
+            display: flex;
+            flex-direction: column;
+
+            .article {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    #flowerExpert {
+        .info-experts {
+            .experts {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    #myParallax {
+        .parallaxClass {
+            .parallaxText {
+                h2 {
+                    font-size: 20px !important;
+                }
+            }
+
+            .registration {
+                width: 370px;
+            }
+        }
+    }
+
+    #blog {
+        .blogImages {
+            display: flex !important;
+            flex-direction: column !important;
+
+            .blogImage {
+                .image {
+                    display: flex;
+                    justify-content: center;
+
+                    .date {
+                        margin-right: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    #productList {
+        .title-filter {
+            .productTitle {
+                #productListCategory {
+                    display: none !important;
+                }
+
+                width: 100%;
+
+                .flowerTypes {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @font-face {

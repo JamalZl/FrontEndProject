@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 ul {
   margin: 0px;
   padding: 0px;
@@ -35,7 +39,7 @@ header nav .logo-links-cart .search-cart .cart i {
   position: relative;
 }
 
-header nav .logo-links-cart .search-cart .cart i .basketPrice {
+header nav .logo-links-cart .search-cart .cart i .basketProductCount {
   position: absolute;
   z-index: 12;
   top: -14px;
@@ -64,6 +68,8 @@ header nav .logo-links-cart .search-cart .cart .basketView {
   right: 60px;
   z-index: 15;
   background-color: white;
+  max-height: 450px;
+  overflow-y: scroll;
 }
 
 header nav .logo-links-cart .search-cart .cart .basketView .basketProducts {
@@ -74,24 +80,40 @@ header nav .logo-links-cart .search-cart .cart .basketView .basketProducts li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 10px 10px  10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 header nav .logo-links-cart .search-cart .cart .basketView .basketProducts li .name-price {
+  width: 190px;
+}
+
+header nav .logo-links-cart .search-cart .cart .basketView .basketProducts li .name-price p {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+header nav .logo-links-cart .search-cart .cart .basketView .basketProducts li .name-price span {
+  font-size: 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 35px;
+}
+
+header nav .logo-links-cart .search-cart .cart .basketView .basketProducts li .name-price span .x {
   margin-left: 5px;
 }
 
 header nav .logo-links-cart .search-cart .cart .basketView .basketProducts li .basketImage img {
-  width: 65px;
+  width: 50px;
+  margin: 10px 10px 15px 15px;
 }
 
 header nav .logo-links-cart .search-cart .cart .basketView .basketProducts li i {
   font-size: 10px;
-  margin-left: 17px;
-  margin-top: 6px;
+  margin-top: 30px;
+  margin-right: 29px;
 }
 
 header nav .logo-links-cart .search-cart .cart .basketView .total-viewCart-checkout .total {
@@ -152,10 +174,6 @@ header nav .logo-links-cart .search-cart .cart .basketView .total-viewCart-check
   font-size: 10px;
 }
 
-header nav .logo-links-cart .search-cart .cart:hover .basketView {
-  display: block;
-}
-
 header nav .logo-links-cart .search-cart .text {
   height: 100%;
   display: -webkit-box;
@@ -165,6 +183,10 @@ header nav .logo-links-cart .search-cart .text {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 15px;
+}
+
+header nav .logo-links-cart .search-cart:hover .basketView {
+  display: block;
 }
 
 header nav .logo-links-cart .nav-links ul {
@@ -177,20 +199,13 @@ header nav .logo-links-cart .nav-links .sub-links {
   list-style: none;
 }
 
-header nav .logo-links-cart .nav-links .sub-links .homeLi::before {
-  content: '';
-  width: 0px;
+header nav .logo-links-cart .nav-links .sub-links li {
+  display: inline-block;
+  padding: 2px;
 }
 
-header nav .logo-links-cart .nav-links .sub-links .homeLi:hover::before {
-  content: '';
-  width: 45px;
-  height: 1px;
-  background-color: grey;
-  position: absolute;
-  top: 67px;
-  -webkit-transition: width .3s ease-in-out;
-  transition: width .3s ease-in-out;
+header nav .logo-links-cart .nav-links .sub-links a:hover {
+  border-bottom: 1px solid Blue;
 }
 
 header nav .logo-links-cart .nav-links .sub-links a {
@@ -334,7 +349,7 @@ header nav .logo-links-cart .nav-links .sub-links li .portfolio ul {
 }
 
 header nav .logo-links-cart .nav-links .sub-links li .portfolio ul li {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 header nav .logo-links-cart .nav-links .sub-links li .portfolio ul li a {
@@ -345,14 +360,16 @@ header nav .logo-links-cart .nav-links .sub-links li .portfolio ul li a {
 
 header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-layouts {
   background-color: white;
-  height: 180px;
-  opacity: 0;
+  height: 250px;
+  visibility: hidden;
   position: absolute;
   top: 50%;
   z-index: 2;
   left: 200px;
   overflow: hidden;
-  width: 200px;
+  width: 230px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-layouts ul {
@@ -361,7 +378,7 @@ header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner
 }
 
 header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-layouts ul li {
-  padding-top: 8px;
+  padding-top: 7px;
   margin-top: 0px;
   height: 20%;
 }
@@ -373,24 +390,24 @@ header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner
 }
 
 header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolioLayoutsLi:hover .portfolio-inner-layouts {
-  height: 180px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-  opacity: 1;
+  max-height: 180px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: visible;
 }
 
 header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-single {
   background-color: white;
   height: 180px;
-  opacity: 0;
   position: absolute;
+  visibility: hidden;
   top: 70%;
   z-index: 2;
   left: 200px;
   overflow: hidden;
   width: 200px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolio-inner-single ul {
@@ -416,7 +433,7 @@ header nav .logo-links-cart .nav-links .sub-links li .portfolio .portfolioSingle
   transition: 0.5s;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
-  opacity: 1;
+  visibility: visible;
 }
 
 header nav .logo-links-cart .nav-links .sub-links li:hover .portfolio {
@@ -459,7 +476,7 @@ header nav .logo-links-cart .nav-links .sub-links li .blog ul li a {
 header nav .logo-links-cart .nav-links .sub-links li .blog .blog-inner-post {
   background-color: white;
   height: 230px;
-  opacity: 0;
+  visibility: hidden;
   position: absolute;
   top: 50%;
   z-index: 2;
@@ -486,11 +503,9 @@ header nav .logo-links-cart .nav-links .sub-links li .blog .blog-inner-post ul l
 }
 
 header nav .logo-links-cart .nav-links .sub-links li .blog .blogPostLi:hover .blog-inner-post {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: visible;
 }
 
 header nav .logo-links-cart .nav-links .sub-links li:hover .blog {
@@ -545,13 +560,15 @@ header nav .menu-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 1500;
 }
 
 header nav .menu {
-  z-index: 10;
+  z-index: 10000;
   position: fixed;
   top: 0;
-  left: 0%;
+  right: 0;
   height: 100vh;
   background-color: white;
   width: 375px;
@@ -571,8 +588,12 @@ header nav .menu .menu-nav-links {
   padding: 28px;
 }
 
+header nav .menu .menu-nav-links #menuNavLinksUl li a {
+  font-size: 11px;
+}
+
 header nav .menu .menu-nav-links span i {
-  font-size: 10px;
+  font-size: 8px;
   position: relative;
   left: 1px;
   bottom: 1px;
@@ -591,7 +612,7 @@ header nav .menu .menu-nav-links ul li .menuHome {
 }
 
 header nav .menu .menu-nav-links ul li .menuHome li a {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 header nav .menu .menu-nav-links ul li .menuPages {
@@ -723,12 +744,10 @@ main #flowers3 .imagesSlide .imgScale img {
   from {
     -webkit-transform: scale(1);
             transform: scale(1);
-    opacity: 0.4;
   }
   to {
     -webkit-transform: scale(1.12);
             transform: scale(1.12);
-    opacity: 1;
   }
 }
 
@@ -736,12 +755,10 @@ main #flowers3 .imagesSlide .imgScale img {
   from {
     -webkit-transform: scale(1);
             transform: scale(1);
-    opacity: 0.4;
   }
   to {
     -webkit-transform: scale(1.12);
             transform: scale(1.12);
-    opacity: 1;
   }
 }
 
@@ -837,6 +854,10 @@ main #productList {
   margin-top: 50px;
 }
 
+main #productList .title-filter .productTitle #productListCategory {
+  display: none;
+}
+
 main #productList .title-filter .productTitle ul {
   margin-bottom: 20px;
 }
@@ -849,6 +870,21 @@ main #productList .title-filter .productTitle ul li a {
   text-decoration: none;
   color: grey;
   font-size: 12px;
+}
+
+main #productList .title-filter .productTitle #dropDownCategory {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  position: relative;
+  bottom: 15px;
+  z-index: 15265541;
+  display: none;
+  max-height: 160px;
+}
+
+main #productList .title-filter .productTitle #dropDownCategory .flowerTypes li a {
+  color: black;
 }
 
 main #productList .products .product {
@@ -2073,39 +2109,156 @@ footer .footer .bottomFooter .socialMedia span a {
   padding-bottom: 4%;
 }
 
-#topAccordion .myAccordions .myAccordion {
-  margin-top: 1%;
+#topAccordion {
+  margin-bottom: 20%;
 }
 
-#topAccordion .myAccordions .myAccordion .title-icon {
-  border: solid 1px #aca6a6;
-  padding: 2%;
+#topAccordion .accordionsLeft .accordion {
+  margin-top: 15px;
+}
+
+#topAccordion .accordionsLeft .accordion .title-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  border: 1px solid lightgray;
+  padding: 20px;
   font-size: 13px;
 }
 
-#topAccordion .myAccordions .myAccordion .title-icon .icon {
-  color: black;
+#topAccordion .accordionsLeft .accordion .accordionDesc {
+  line-height: 1.8;
+  padding: 20px 0;
 }
 
-#topAccordion .myAccordions .myAccordion .title-icon .title {
-  margin-left: 2%;
-  color: black;
+#topAccordion .accordionsLeft .accordionActive {
+  background-color: #f54444;
 }
 
-#topAccordion .myAccordions .myAccordion .article {
-  padding: 4% 0;
-}
-
-#topAccordion .accordionActive {
-  background-color: #e94545;
-}
-
-#topAccordion .accordionActive .icon i {
+#topAccordion .accordionsLeft .accordionActive .title {
   color: white;
 }
 
-#topAccordion .accordionActive .title span {
+#topAccordion .accordionsLeft .accordionActive .icon {
   color: white;
+}
+
+#topAccordion .accordionsRight .accordionRight {
+  margin-top: 15px;
+}
+
+#topAccordion .accordionsRight .accordionRight .title-iconRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  font-size: 13px;
+}
+
+#topAccordion .accordionsRight .accordionRight .accordionDescRight {
+  line-height: 1.8;
+  padding: 20px 0;
+}
+
+#topAccordion .accordionsRight .accordionRight .accordionActiveRight {
+  background-color: #f54444;
+}
+
+#topAccordion .accordionsRight .accordionRight .accordionActiveRight .titleRight {
+  color: white;
+}
+
+#topAccordion .accordionsRight .accordionRight .accordionActiveRight .iconRight {
+  color: white;
+}
+
+#bottomAccordion {
+  margin-top: 20%;
+}
+
+#bottomAccordion .bottomAccordionsLeft .bottomAccordion {
+  margin-top: 15px;
+}
+
+#bottomAccordion .bottomAccordionsLeft .bottomAccordion .bottomTitle-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+  font-size: 13px;
+}
+
+#bottomAccordion .bottomAccordionsLeft .bottomAccordion .bottomAccordionDesc {
+  line-height: 1.8;
+  padding: 20px 0;
+}
+
+#bottomAccordion .bottomAccordionsLeft .bottomAccordionActive .title {
+  color: red;
+}
+
+#bottomAccordion .bottomAccordionsLeft .bottomAccordionActive .icon {
+  color: red;
+}
+
+#bottomAccordion .bottomAccordionsRight .bottomAccordionRight {
+  margin-top: 15px;
+}
+
+#bottomAccordion .bottomAccordionsRight .bottomAccordionRight .bottomTitle-iconRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+  font-size: 13px;
+}
+
+#bottomAccordion .bottomAccordionsRight .bottomAccordionRight .bottomAccordionDescRight {
+  line-height: 1.8;
+  padding: 20px 0;
+}
+
+#bottomAccordion .bottomAccordionsRight .bottomAccordionRight .bottomAccordionActiveRight .titleRight {
+  color: red;
+}
+
+#bottomAccordion .bottomAccordionsRight .bottomAccordionRight .bottomAccordionActiveRight .iconRight {
+  color: red;
 }
 
 #entranceShopList {
@@ -2148,6 +2301,7 @@ footer .footer .bottomFooter .socialMedia span a {
 #shopListProducts .cards .card .img-text img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 100%;
 }
 
 #shopListProducts .cards .card .img-text .text {
@@ -2538,7 +2692,7 @@ footer .footer .bottomFooter .socialMedia span a {
   color: white;
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 768px) {
   header nav .logo-links-cart .nav-links {
     display: none;
   }
@@ -2549,6 +2703,730 @@ footer .footer .bottomFooter .socialMedia span a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  #tabsTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #tabsTop .tabsLeftContent {
+    width: 47%;
+  }
+  #tabsTop .tabsLeftContent .shopTitle {
+    display: block;
+    width: 100%;
+  }
+  #tabsTop .tabsLeftContent .shopTitle .myCart {
+    width: 100%;
+    height: 55px;
+    border-left: 1px solid #dad7d7;
+  }
+  #tabsTop .tabsRightContent {
+    width: 47%;
+  }
+  #tabsTop .tabsRightContent .shopTitle {
+    display: block;
+    width: 100%;
+  }
+  #tabsTop .tabsRightContent .shopTitle .myCartRight {
+    width: 100%;
+    height: 55px;
+    border-left: 1px solid #dad7d7;
+  }
+  #tabsCenterFullWidth .tabsCenterContent .shopTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 25px;
+  }
+  #tabsCenterFullWidth .tabsCenterContent .shopTitle .myCartCenter {
+    height: 40px;
+  }
+  #tabsBottom {
+    width: 100%;
+  }
+  #tabsBottom .tabsBottomContent {
+    display: block;
+    width: 100%;
+  }
+  #tabsBottom .tabsBottomContent .shopTitle {
+    display: block;
+  }
+  #tabsBottom .tabsBottomContent .shopTitle .myCartBottom {
+    width: 100%;
+    border: 1px solid #dad7d7;
+    border-top: none;
+  }
+  #tabsBottom .tabsBottomContent .shopTitle .tabService {
+    border-top: 1px solid #dad7d7;
+  }
+  footer .footer .topFooter {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer .topFooter ul {
+    width: 34%;
+  }
+  footer .footer .bottomFooter {
+    text-align: center;
+    display: block !important;
+  }
+  footer .footer .bottomFooter .rights {
+    font-size: 10px;
+  }
+  footer .footer .bottomFooter .payments .footerImage img {
+    width: 100px;
+  }
+  footer .footer .bottomFooter .socialMedia a {
+    font-size: 11px;
+  }
+  #firstProgressBar .allBars {
+    margin-top: 50px;
+  }
+  #firstProgressBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars {
+    margin-top: 50px;
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .firstBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .firstBar .barContent {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .firstBar .barContent .loadingBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .secondBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .secondBar .barContent {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .secondBar .barContent .loadingBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .thirdBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .thirdBar .barContent {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .thirdBar .barContent .loadingBar {
+    width: 100%;
+  }
+  #shopListProducts .cards .row .card {
+    width: 295;
+    margin-top: 20px;
+  }
+  #shopRelatedProducts .row .products {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+  #shopRelatedProducts .row .products .product .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #shopDesc-info-review {
+    padding: 0;
+  }
+  #shopDesc-info-review .shopTitle .myCart {
+    border-left: 1px solid #dad7d7;
+  }
+  #shopOrangeAmaryllis .shopAmeryllisImages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #shopOrangeAmaryllis .shopAmeryllisImages .smallImages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 35px;
+  }
+  #shopOrangeAmaryllis .shopAmeryllisImages .bigImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #shopOrangeAmaryllis .shopAmeryllisImages .bigImage img {
+    width: 100%;
+    height: 800px;
+  }
+  #flowers3 .flowersInfo {
+    overflow: hidden;
+  }
+  #flowers3 .flowersInfo .Infos .titleInfo span {
+    font-size: 33px !important;
+  }
+  #flowers3 .flowersInfo .Infos .descInfo {
+    width: 250px;
+    overflow: hidden;
+  }
+  #flowers3 .signatureInfo img {
+    width: 180px !important;
+  }
+  #video .video-article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #video .video-article .article {
+    padding-left: 30px;
+  }
+  #flowerExpert .info-experts .experts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #myParallax .parallaxClass .parallaxText h2 {
+    font-size: 20px !important;
+  }
+  #myParallax .parallaxClass .registration {
+    width: 370px;
+  }
+  #blog .blogImages {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #blog .blogImages .blogImage .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #blog .blogImages .blogImage .image .date {
+    margin-right: 300px;
+  }
+  #productList .title-filter .productTitle {
+    width: 100%;
+  }
+  #productList .title-filter .productTitle #productListCategory {
+    display: none !important;
+  }
+  #productList .title-filter .productTitle .flowerTypes {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #tabsTop .tabsLeftContent {
+    width: 100%;
+  }
+  #tabsTop .tabsRightContent {
+    margin-top: 20px;
+    width: 100%;
+  }
+  footer .footer .topFooter {
+    display: block !important;
+  }
+  footer .footer .bottomFooter {
+    text-align: center;
+    display: block !important;
+  }
+  footer .footer .bottomFooter .rights {
+    font-size: 8px;
+  }
+  footer .footer .bottomFooter .payments .footerImage img {
+    width: 100px;
+  }
+  footer .footer .bottomFooter .socialMedia a {
+    font-size: 10px;
+  }
+  #entranceShopList h1 {
+    font-size: 35px;
+  }
+  #shopListProducts {
+    width: 100%;
+  }
+  #shopListProducts .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #miniProducts .miniProducts {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  #miniProducts .miniProducts .miniProduct {
+    width: 300px;
+  }
+  #miniProducts .miniProducts .miniProduct .image {
+    padding: 0;
+    margin: 0;
+  }
+  #miniProducts .miniProducts .miniProduct .image img {
+    margin-left: 25px;
+    width: 250px;
+    height: 280px;
+  }
+  #miniProducts .miniProducts .miniProduct .category-price {
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+  #shopproductNameLis h1 {
+    font-size: 35px;
+  }
+  #shopproductNameLis p {
+    font-size: 15px;
+  }
+  #shopOrangeAmaryllis .row {
+    display: block !important;
+  }
+  #shopOrangeAmaryllis .row .shopAmeryllisImages {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  #shopOrangeAmaryllis .row .shopAmeryllisImages .bigImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 14px;
+  }
+  #shopOrangeAmaryllis .row .shopAmeryllisImages .bigImage img {
+    width: 290px;
+    height: 350px;
+  }
+  #shopOrangeAmaryllis .row .shopAmeryllisImages .smallImages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #shopOrangeAmaryllis .row .shopAmeryllisInfo {
+    width: 100% !important;
+    left: 0% !important;
+    margin-bottom: 25px;
+  }
+  #shopOrangeAmaryllis .row .shopAmeryllisInfo .title h2 {
+    font-size: 30px !important;
+  }
+  #shopRelatedProducts .row .products {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #flowers3 .imagesSlide .imgScale img {
+    width: 100%;
+  }
+  #flowers3 .flowersInfo {
+    width: 220px !important;
+  }
+  #flowers3 .flowersInfo .Infos .descInfo {
+    display: none !important;
+  }
+  #flowers3 .flowersInfo .Infos .titleInfo span {
+    font-size: 20px !important;
+  }
+  #productList .title-filter .productTitle {
+    width: 100%;
+  }
+  #productList .title-filter .productTitle #productListCategory {
+    display: block !important;
+  }
+  #productList .title-filter .productTitle #dropDownCategory .flowerTypes {
+    display: block !important;
+    width: 100%;
+  }
+  #productList .title-filter .productTitle .flowerTypes {
+    display: none !important;
+  }
+  #video .video-article .videoImg .icon i {
+    font-size: 50px;
+  }
+  #video .video-article .videoImg img {
+    width: 300px !important;
+    height: 194px !important;
+  }
+  #video .video-article .article .title {
+    margin-top: 20px;
+  }
+  #video .video-article .article .title h5 {
+    font-size: 25px !important;
+    text-align: justify;
+  }
+  #video .video-article .article .desc {
+    text-align: center;
+  }
+  #flowerExpert .info-experts .experts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #myParallax .parallaxClass .registration {
+    width: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #myParallax .parallaxClass .registration input {
+    width: 290px;
+  }
+  #myParallax .parallaxClass .registration button {
+    width: 150px;
+  }
+  #blog .blogImages .blogImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #blog .blogImages .blogImage .image {
+    width: 300px;
+    height: 191px;
+  }
+  #blog .blogImages .blogImage .image .date {
+    position: absolute;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header nav .logo-links-cart .nav-links {
+    display: none;
+  }
+  header nav .logo-links-cart .search-cart {
+    display: none !important;
+  }
+  header nav .menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #tabsTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #tabsTop .tabsLeftContent {
+    width: 47%;
+  }
+  #tabsTop .tabsLeftContent .shopTitle {
+    display: block;
+    width: 100%;
+  }
+  #tabsTop .tabsLeftContent .shopTitle .myCart {
+    width: 100%;
+    height: 55px;
+    border-left: 1px solid #dad7d7;
+  }
+  #tabsTop .tabsRightContent {
+    width: 47%;
+  }
+  #tabsTop .tabsRightContent .shopTitle {
+    display: block;
+    width: 100%;
+  }
+  #tabsTop .tabsRightContent .shopTitle .myCartRight {
+    width: 100%;
+    height: 55px;
+    border-left: 1px solid #dad7d7;
+  }
+  #tabsCenterFullWidth .tabsCenterContent .shopTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 25px;
+  }
+  #tabsCenterFullWidth .tabsCenterContent .shopTitle .myCartCenter {
+    height: 40px;
+  }
+  #tabsBottom {
+    width: 100%;
+  }
+  #tabsBottom .tabsBottomContent {
+    display: block;
+    width: 100%;
+  }
+  #tabsBottom .tabsBottomContent .shopTitle {
+    display: block;
+  }
+  #tabsBottom .tabsBottomContent .shopTitle .myCartBottom {
+    width: 100%;
+    border: 1px solid #dad7d7;
+    border-top: none;
+  }
+  #tabsBottom .tabsBottomContent .shopTitle .tabService {
+    border-top: 1px solid #dad7d7;
+  }
+  footer .footer .topFooter {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer .topFooter ul {
+    width: 34%;
+  }
+  footer .footer .bottomFooter {
+    text-align: center;
+    display: block !important;
+  }
+  footer .footer .bottomFooter .rights {
+    font-size: 10px;
+  }
+  footer .footer .bottomFooter .payments .footerImage img {
+    width: 100px;
+  }
+  footer .footer .bottomFooter .socialMedia a {
+    font-size: 11px;
+  }
+  #firstProgressBar .allBars {
+    margin-top: 50px;
+  }
+  #firstProgressBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars {
+    margin-top: 50px;
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .firstBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .firstBar .barContent {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .firstBar .barContent .loadingBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .secondBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .secondBar .barContent {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .secondBar .barContent .loadingBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .thirdBar {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .thirdBar .barContent {
+    width: 100%;
+  }
+  #firstProgressBar .myCol .allBars .thirdBar .barContent .loadingBar {
+    width: 100%;
+  }
+  #shopListProducts .cards .row .card {
+    width: 295;
+    margin-top: 20px;
+  }
+  #shopRelatedProducts .row .products {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+  #shopRelatedProducts .row .products .product .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #shopDesc-info-review {
+    padding: 0;
+  }
+  #shopDesc-info-review .shopTitle .myCart {
+    border-left: 1px solid #dad7d7;
+  }
+  #shopOrangeAmaryllis .shopAmeryllisImages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #shopOrangeAmaryllis .shopAmeryllisImages .smallImages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 35px;
+  }
+  #shopOrangeAmaryllis .shopAmeryllisImages .bigImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #shopOrangeAmaryllis .shopAmeryllisImages .bigImage img {
+    width: 100%;
+    height: 800px;
+  }
+  #flowers3 .flowersInfo {
+    overflow: hidden;
+  }
+  #flowers3 .flowersInfo .Infos .titleInfo span {
+    font-size: 33px !important;
+  }
+  #flowers3 .flowersInfo .Infos .descInfo {
+    width: 250px;
+    overflow: hidden;
+  }
+  #flowers3 .signatureInfo img {
+    width: 180px !important;
+  }
+  #video .video-article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #video .video-article .article {
+    padding-left: 30px;
+  }
+  #flowerExpert .info-experts .experts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #myParallax .parallaxClass .parallaxText h2 {
+    font-size: 20px !important;
+  }
+  #myParallax .parallaxClass .registration {
+    width: 370px;
+  }
+  #blog .blogImages {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #blog .blogImages .blogImage .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #blog .blogImages .blogImage .image .date {
+    margin-right: 300px;
+  }
+  #productList .title-filter .productTitle {
+    width: 100%;
+  }
+  #productList .title-filter .productTitle #productListCategory {
+    display: none !important;
+  }
+  #productList .title-filter .productTitle .flowerTypes {
+    width: 100%;
   }
 }
 

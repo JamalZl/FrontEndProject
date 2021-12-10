@@ -41,14 +41,7 @@ $(document).ready(function () {
         }
     })
 
-   let addToCards=document.querySelectorAll("#productList .products .product .text")
-   let products=document.querySelector(".basketProducts")
-
-   addToCards.forEach(addToCard =>{
-       addToCard.onclick=function(e){
-           let Id=this.parentNode.parentNode.parentNode.getAttribute("data-id")
-           let img=this.parentNode.parentNode.parentNode.children[0].children[0].getAttribute("src")
-           console.log(img);
-       }
-   })
+    $("#productList .title-filter .productTitle #productListCategory").click(function(){
+        $("#productList .title-filter .productTitle #dropDownCategory").slideToggle();
+    })
 })

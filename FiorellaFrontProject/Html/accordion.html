@@ -356,149 +356,176 @@
         </nav>
     </header>
 
-
-    <style>
-            .icon {
-                transition: .3s;
-            }
-            
-            .title-icon {
-                cursor: pointer
-            }
-            
-            .active {
-                transform: rotate(180deg);
-            }
-            
-            .section {
-                height: 200px;
-                border: 20px solid;
-                padding: 20px;
-                margin: 100px;
-            }
-            
-            .aos-box {
-                height: 200px;
-                width: 200px;
-                background-color: aqua;
-            }
-            /* .title {
-                height: 200px;
-                overflow-y: scroll;
-            } */
-            
-            .parallax-window {
-                min-height: 400px;
-                background: transparent;
-            }
-        </style>
-        
-        <main>
-            <section id="entranceAccordion">
-                <div class="container">
-                    <div class="row">
-                        <h1>
-                            Accordions
-                        </h1>
-                    </div>
+    <main>
+        <section id="entranceAccordion">
+            <div class="container">
+                <div class="row">
+                    <h1>
+                        Accordions
+                    </h1>
                 </div>
-            </section>
-            <section id="topAccordion">
-            <div class="container"> 
-                    <div class="row">
-                        <div class="myAccordions">
-                            <div class="myAccordion col-lg-6">
-                                <div class="icon-title  d-flex">
-                                    <div class="icon"><i class="fas fa-minus"></i></div>
-                                    <div class="title"><span>CREATIVE ELEMENTS</span></div>
-                                </div>
-                                <div class="accordionText">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio iusto recusandae
-                                    voluptas,
-                                    saepe enim vero omnis commodi repellat impedit cumque, amet possimus nesciunt natus
-                                    quis
-                                    vitae. Voluptatum voluptatem corrupti dignissimos debitis recusandae! Architecto
-                                    vero,
-                                    animi
-                                    aut soluta quae odit est, minima, repudiandae illum tempore optio.
-                                </div>
-                            </div>
-                            <div class="myAccordion col-lg-6">
-                                <div class="icon-title  d-flex">
-                                    <div class="icon"><i class="fas fa-plus"></i></div>
-                                    <div class="title"><span>ATTENTION TO DETAIL</span> </div>
-                                </div>
-                                <div class="accordionText d-none">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio iusto recusandae
-                                    voluptas,
-                                    saepe enim vero omnis commodi repellat impedit cumque, amet possimus nesciunt natus
-                                    quis
-                                    vitae. Voluptatum voluptatem corrupti dignissimos debitis recusandae! Architecto
-                                    vero,
-                                    animi
-                                    aut soluta quae odit est, minima, repudiandae illum tempore optio.
-                                </div>
-                            </div>
-                            <div class="myAccordion col-lg-6">
-                                <div class="icon-title  d-flex">
-                                    <div class="icon"><i class="fas fa-plus"></i></div>
-                                    <div class="title"><span>EASY IMPORT</span> </div>
-                                </div>
-                                <div class="accordionText d-none">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio iusto recusandae
-                                    voluptas,
-                                    saepe enim vero omnis commodi repellat impedit cumque, amet possimus nesciunt natus
-                                    quis
-                                    vitae. Voluptatum voluptatem corrupti dignissimos debitis recusandae! Architecto
-                                    vero,
-                                    animi
-                                    aut soluta quae odit est, minima, repudiandae illum tempore optio.
-                                </div>
-                            </div>
+            </div>
+        </section>
+        <section id="topAccordion">
+            <div class="container d-flex justify-content-between">
+                <div class="accordionsLeft col-lg-5">
+                    <div class="accordion">
+                        <div class="title-icon accordionActive">
+                            <div class="title">CREATIVE ELEMENTS</div>
+                            <div class="icon active"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div class="accordionDesc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="title-icon">
+                            <div class="title">ATTENTION TO DETAIL</div>
+                            <div class="icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div style="display: none;" class="accordionDesc ">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="title-icon">
+                            <div class="title">EASY IMPORT</div>
+                            <div class="icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div style="display: none;" class="accordionDesc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis
+                            ea exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat
+                            nulla quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="accordionsRight col-lg-5">
+                    <div class="accordionRight">
+                        <div class="title-iconRight accordionActiveRight">
+                            <div class="titleRight">CREATIVE ELEMENTS</div>
+                            <div class="iconRight"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div class="accordionDescRight">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    <div class="accordionRight">
+                        <div class="title-iconRight ">
+                            <div class="titleRight">CREATIVE ELEMENTS</div>
+                            <div class="iconRight"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div style="display: none;" class="accordionDescRight">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    <div class="accordionRight">
+                        <div class="title-iconRight ">
+                            <div class="titleRight">CREATIVE ELEMENTS</div>
+                            <div class="iconRight"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div style="display: none;" class="accordionDescRight">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
                         </div>
                     </div>
                 </div>
-                <!-- <div class="accordions">
-                    <div class="container">
-                        <div class="accordion w-50">
-                            <div class="title-icon border py-2 px-3 d-flex justify-content-between">
-                                <div class="title">First question</div>
-                                <div class="icon active"><i class="fas fa-chevron-down"></i></div>
-                            </div>
-                            <div class="article border border-top-0 py-2 px-3">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates possimus quod debitis eius quo sit similique minus alias quis? Doloribus nam ratione optio repudiandae laboriosam voluptatem tempora itaque ea dicta.
-                            </div>
+            </div>
+
+        </section>
+        <section id="bottomAccordion">
+            <div class="container d-flex justify-content-between">
+                <div class="bottomAccordionsLeft col-lg-5">
+                    <div class="bottomAccordion ">
+                        <div class="bottomTitle-icon bottomAccordionActive">
+                            <div class="title">CREATIVE ELEMENTS</div>
+                            <div class="icon active"><i class="fas fa-minus"></i></div>
                         </div>
-                        <div class="accordion w-50">
-                            <div class="title-icon border py-2 px-3 d-flex justify-content-between">
-                                <div class="title">Second question</div>
-                                <div class="icon"><i class="fas fa-chevron-down"></i></div>
-                            </div>
-                            <div style="display: none;" class="article border border-top-0 py-2 px-3">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates possimus quod debitis eius quo sit similique minus alias quis? Doloribus nam ratione optio repudiandae laboriosam voluptatem tempora itaque ea dicta.
-                            </div>
-                        </div>
-                        <div class="accordion w-50">
-                            <div class="title-icon border py-2 px-3 d-flex justify-content-between">
-                                <div class="title">Third question</div>
-                                <div class="icon"><i class="fas fa-chevron-down"></i></div>
-                            </div>
-                            <div style="display: none;" class="article border border-top-0 py-2 px-3">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates possimus quod debitis eius quo sit similique minus alias quis? Doloribus nam ratione optio repudiandae laboriosam voluptatem tempora itaque ea dicta.
-                            </div>
+                        <div class="bottomAccordionDesc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
                         </div>
                     </div>
-                </div> -->
+                    <div class="bottomAccordion">
+                        <div class="bottomTitle-icon">
+                            <div class="title">ATTENTION TO DETAIL</div>
+                            <div class="icon active"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div class="bottomAccordionDesc d-none">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    <div class="bottomAccordion">
+                        <div class="bottomTitle-icon">
+                            <div class="title">EASY IMPORT</div>
+                            <div class="icon active"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div class="bottomAccordionDesc d-none">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    
 
-            </section>
-        </main>
+                </div>
+                <div class="bottomAccordionsRight col-lg-5">
+                    <div class="bottomAccordionRight">
+                        <div class="bottomTitle-iconRight  bottomAccordionActiveRight">
+                            <div class="titleRight">CREATIVE ELEMENTS</div>
+                            <div class="iconRight"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div class="bottomAccordionDescRight">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    <div class="bottomAccordionRight">
+                        <div class="bottomTitle-iconRight">
+                            <div class="titleRight">ATTENTION TO DETAIL</div>
+                            <div class="iconRight"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div class="bottomAccordionDescRight d-none">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                    <div class="bottomAccordionRight">
+                        <div class="bottomTitle-iconRight">
+                            <div class="titleRight">EASY IMPORT</div>
+                            <div class="iconRight"><i class="fas fa-minus"></i></div>
+                        </div>
+                        <div class="bottomAccordionDescRight d-none">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus perspiciatis ea
+                            exercitationem deserunt recusandae laboriosam debitis praesentium provident fugiat nulla
+                            quis aliquid hic ad dolorum Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="../assets/Js/accordions.js"></script>
-        <script src="../assets/Js/main.js"></script>
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/Js/accordions.js"></script>
+    <script src="../assets/Js/main.js"></script>
+</body>
 
 </html>

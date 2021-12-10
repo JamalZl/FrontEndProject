@@ -28,7 +28,7 @@
         <nav>
             <div class="container">
                 <div class="row justify-content-between">
-                    <div
+                    <div p
                         class="logo-links-cart col-lg-12 col-sm-4 col-4 d-flex justify-content-between align-items-center">
                         <div class="logo col-4 col-sm-d">
                             <a href="C:\Users\jamalaz\Desktop\FiorellaFrontProject\Html\home.html"><img
@@ -38,7 +38,7 @@
                             <ul style="height: 100%;"
                                 class="sub-links d-flex justify-content-around align-items-center">
                                 <li class="homeLi"><a href="">
-                                        <div class="homeLi"></div>HOME
+                                        <div class="hover-underline-animation"></div>HOME
                                     </a>
                                     <div class="home">
                                         <ul>
@@ -62,7 +62,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="">SHOP</a>
+                                <li class="homeLi"><a href="">SHOP</a>
                                     <div class="shop">
                                         <ul>
                                             <h4>Product types</h4>
@@ -98,14 +98,14 @@
                                             <h4>Shop Layouts</h4>
                                             <li><a href="">Two Columns Grid</a></li>
                                             <li><a href="">Three Columns Grid</a></li>
-                                            <li><a href=""></a>Four Columns Grid</li>
-                                            <li><a href=""></a>Four Columns Wide</li>
+                                            <li><a href="">Four Columns Grid</a></li>
+                                            <li><a href="">Four Columns Wide</a></li>
                                             <li><a href="">Five Columns Wide</a></li>
-                                            <li><a href=""></a>Six Columns Wide</li>
+                                            <li><a href="">Six Columns Wide</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="">PORTFOLIO</a>
+                                <li class="homeLi"><a href="">PORTFOLIO</a>
                                     <div class="portfolio">
                                         <ul>
                                             <li><a href="">Standart</a></li>
@@ -199,13 +199,13 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="search"><i class="fas fa-search"></i></div>
+                        <div class="search d-none"><i class="fas fa-search"></i></div>
                         <div style="height: 100%; display:flex; align-items:center; "
                             class="search-cart col-lg-2 d-flex justify-content-evenly">
                             <div class="container">
                                 <div class="cart">
                                     <i class="fas fa-shopping-bag">
-                                        <div class="basketPrice">0</div>
+                                        <div class="basketProductCount">0</div>
                                     </i>
                                     <div class="basketView">
                                         <ul class="basketProducts">
@@ -214,18 +214,18 @@
                                                     <img src="../assets/images/shopListmini3.jpg" alt="">
                                                 </div>
                                                 <div class="name-price">
-                                                    <h6>Sweet Alyssum</h6>
-                                                    <span id="basket1">1 <span>x</span></span>
+                                                    <p>Sweet Alyssum</p>
+                                                    <span id="basket1">1 <span class="x">x</span></span>
                                                     <span >259<span>$</span></span>
                                                 </div>
-                                                <i class="fas fa-times"></i>
+                                                <i class="remove fas fa-times"></i>
                                             </li> -->
 
                                         </ul>
                                         <div class="total-viewCart-checkout">
                                             <div class="total">
                                                 <span>TOTAL:</span>
-                                                <span>0</span>
+                                                <span class="basketTotalPrice">0</span>
                                             </div>
                                             <div class="viewCart-checkout">
                                                 <div class="viewCart">
@@ -238,7 +238,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="text"><span>Cart<span>0</span> <span>$</span></span></div>
+                                    <div class="text"><span>Cart<span class="basketTotalPrice"><span
+                                                    style="margin-left: 5px;">0</span></div>
                                 </div>
                             </div>
 
@@ -252,7 +253,7 @@
                             <i class="fas fa-times"></i>
                         </div>
                         <div class="menu-nav-links">
-                            <ul style="list-style: none;">
+                            <ul id="menuNavLinksUl" style="list-style: none;">
                                 <li class="menuHomeLi">
                                     <a href="#">HOME</a>
                                     <span><i class="fas fa-chevron-right"></i></span>
@@ -394,6 +395,185 @@
             </div>
         </nav>
     </header>
+    <!-- <header>
+        <nav>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div 
+                        class="stickyNavBar logo-links-cart d-none col-lg-12 col-sm-4 col-4 d-flex justify-content-start align-items-center">
+                        <div class="logo col-4 col-sm-d">
+                            <a href="C:\Users\jamalaz\Desktop\FiorellaFrontProject\Html\home.html"><img
+                                    src="../assets/images/h2-logo-1.png" alt=""></a>
+                        </div>
+                        <div style="height: 100%;" class="nav-links col-lg-6 d-flex justify-content-between">
+                            <ul style="height: 100%; width: 100%;"
+                                class="sub-links d-flex justify-content-between">
+                                <li class="homeLi"><a href="">
+                                        <div class="homeLi"></div>HOME
+                                    </a>
+                                    <div class="home">
+                                        <ul>
+                                            <li><a href="">Main Home</a></li>
+                                            <li><a href="">Grid Home</a></li>
+                                            <li><a href="">Flower Shop</a></li>
+                                            <li><a href="">Animated Slider</a></li>
+                                            <li><a href="">Metro Showcase</a></li>
+                                            <li><a href="">Carosuel Showcase</a></li>
+                                            <li><a href="">Landing</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="homeLi"><a href="">PAGES
+                                    </a>
+                                    <div class="pages">
+                                        <ul>
+                                            <li class="homeLi"><a href="">About Us</a></li>
+                                            <li><a href="">FAQ page</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">SHOP</a>
+                                    <div class="shop">
+                                        <ul>
+                                            <h4>Product types</h4>
+                                            <li><a href="">Standart Product</a></li>
+                                            <li><a href="">Grouped Product</a></li>
+                                            <li><a href="">Variable Product</a></li>
+                                            <li><a href="">Virtual Product</a></li>
+                                            <li><a href="">External Product</a></li>
+                                            <li><a href="">Downloadable Product</a></li>
+                                            <li><a href="">On Sale Product</a></li>
+                                            <li><a href="">Out of Stock Product</a></li>
+                                            <li><a href="">New Product</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h4>Shop Pages</h4>
+                                            <li><a href="">My Account</a></li>
+                                            <li><a href="">Cart</a></li>
+                                            <li><a href="">Checkout</a></li>
+                                            <li><a href="">Orders</a></li>
+                                            <li><a href="">Downloads</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h4> Shop Types </h4>
+                                            <li><a href="">Product List</a></li>
+                                            <li><a href="">Without Sidebar</a></li>
+                                            <li><a href="">With Category Filter</a></li>
+                                            <li><a href="">With Ordering Filter </a></li>
+                                            <li><a href="">Shop Carousel</a></li>
+                                            <li><a href="">Product Categories</a></li>
+                                            <li><a href="">Single Category</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h4>Shop Layouts</h4>
+                                            <li><a href="">Two Columns Grid</a></li>
+                                            <li><a href="">Three Columns Grid</a></li>
+                                            <li><a href=""></a>Four Columns Grid</li>
+                                            <li><a href=""></a>Four Columns Wide</li>
+                                            <li><a href="">Five Columns Wide</a></li>
+                                            <li><a href=""></a>Six Columns Wide</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">PORTFOLIO</a>
+                                    <div class="portfolio">
+                                        <ul>
+                                            <li><a href="">Standart</a></li>
+                                            <li><a href="">Gallery</a></li>
+                                            <li><a href="">Masonry</a></li>
+                                            <li class="portfolioLayoutsLi d-flex justify-content-between"
+                                                style="font-size: 7px;"><a href="">Portfolio
+                                                    Layouts</a>
+                                                <i class="fas fa-chevron-right"></i>
+                                                <div class="portfolio-inner-layouts">
+                                                    <ul>
+                                                        <li><a href="">Two Columns</a></li>
+                                                        <li><a href="">Three Columns</a></li>
+                                                        <li><a href="">Four Columns</a></li>
+                                                        <li><a href="">Four Columns Wide</a></li>
+                                                        <li><a href="">Five Columns Wide</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="portfolioSingleLi d-flex justify-content-between"
+                                                style="font-size: 7px;"><a href="">Portfolio Single</a>
+                                                <i class="fas fa-chevron-right"></i>
+                                                <div class="portfolio-inner-single">
+                                                    <ul>
+                                                        <li><a href="">Small Images</a></li>
+                                                        <li><a href="">Small Slider</a></li>
+                                                        <li><a href="">Big Images</a></li>
+                                                        <li><a href="">Big Slider</a></li>
+                                                        <li><a href="">Gallery</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">BLOG</a>
+                                    <div class="blog">
+                                        <ul>
+                                            <li><a href="">Masonry</a></li>
+                                            <li><a href="">Standart</a></li>
+                                            <li class="blogPostLi d-flex justify-content-between"><a href="">Post Types
+                                                </a>
+                                                <i class="fas fa-chevron-right" style="font-size: 7px;"></i>
+                                                <div class="blog-inner-post">
+                                                    <ul>
+                                                        <li><a href="">Standart</a></li>
+                                                        <li><a href="">Gallery</a></li>
+                                                        <li><a href="">Link</a></li>
+                                                        <li><a href="">Quote</a></li>
+                                                        <li><a href="">Audio</a></li>
+                                                        <li><a href="">Video</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li><a href="">ELEMENTS</a>
+                                    <div class="elements">
+                                        <ul>
+
+                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
+                                                    style="font-size: 7px;"></i><a href="">Classic</a>
+                                                <div class="elements-inner-classic">
+                                                    <ul>
+                                                        <li><a href=""></a></li>
+                                                        <li><a href=""></a></li>
+                                                        <li><a href=""></a></li>
+                                                        <li><a href=""></a></li>
+                                                        <li><a href=""></a></li>
+                                                    </ul> -->
+                                                <!-- </div>
+                                            </li>
+                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
+                                                    style="font-size: 7px;"></i><a href="">Infographic</a>
+                                                <div class="elements-inner-info"></div>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <i class="fas fa-chevron-left" style="font-size: 7px;"></i><a
+                                                    href="">Interactive</a>
+                                                <div class="elements-inner-interactive"></div>
+                                            </li>
+                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
+                                                    style="font-size: 7px;"></i><a href="">Typography</a>
+                                                <div class="elements-inner-typo"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header> -->
     <main>
         <section id="flowers3">
             <div class="imagesSlide">
@@ -427,6 +607,18 @@
                 <div class="row">
                     <div class="title-filter d-flex justify-content-between">
                         <div class="productTitle col-lg-10">
+                            <p id="productListCategory">Categories</p>
+                            <div id="dropDownCategory">
+                                <ul class="flowerTypes">
+                                    <li><a class="types" data-id="all" href="#">ALL</a></li>
+                                    <li><a class="types" data-id="popular" href="#">POPULAR</a></li>
+                                    <li><a class="types" data-id="winter" href="#">WINTER</a></li>
+                                    <li><a class="types" data-id="various" href="">VARIOUS</a></li>
+                                    <li><a class="types" data-id="exotic" href="">EXOTIC</a></li>
+                                    <li><a class="types" data-id="greens" href="">GREENS</a></li>
+                                    <li><a class="types" data-id="cactuses" href="">CACTUSES</a></li>
+                                </ul>
+                            </div>
                             <ul class="flowerTypes col-lg-6 d-flex justify-content-around">
                                 <li><a class="types" data-id="all" href="#">ALL</a></li>
                                 <li><a class="types" data-id="popular" href="#">POPULAR</a></li>
@@ -446,7 +638,7 @@
 
                     </div>
                     <div class="products d-flex flex-wrap justify-content-around">
-                        <div class="product" data-id="basket1">
+                        <div class="product" data-id="1">
                             <div class="image popular winter">
                                 <img src="../assets/images/shop-14-img.jpg" alt="">
                             </div>
@@ -456,11 +648,11 @@
                             <div class="productPrice cart-container d-flex justify-content-center">
                                 <div class="addToCart d-flex justify-content-center">
                                     <div class="text"><span>Add to cart</span></div>
-                                    <div class="price"><span style="font-size: 12px;">259$</span></div>
+                                    <div class="price"><span style="font-size: 12px;">259</span><span>$</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="basket2">
+                        <div class="product" data-id="2">
                             <div class="image popular winter">
                                 <img src="../assets/images/shop-13-img.jpg" alt="">
                             </div>
@@ -469,27 +661,26 @@
                                 <div class="addToCart d-flex justify-content-center">
                                     <div class="text"><span>Add to cart</span></div>
 
-                                    <div class="price"><span style="font-size: 12px;">259$</span></div>
+                                    <div class="price"><span style="font-size: 12px;">259</span><span>$</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="basket3">
+                        <div class="product" data-id="3">
                             <div class="image">
                                 <div class="sold"><span>Sold</span> </div>
                                 <img src="../assets/images/shop-10-img.jpg" alt="">
                             </div>
                             <div class="productName">SWEET ALYSSUM
-
                             </div>
                             <div class="productPrice cart-container d-flex justify-content-center">
                                 <div class="addToCart d-flex justify-content-center">
                                     <div class="text"><span>Add to cart</span></div>
 
-                                    <div class="price"><span style="font-size: 12px;">259$</span></div>
+                                    <div class="price"><span style="font-size: 12px;">259</span><span>$</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="basket4">
+                        <div class="product" data-id="4">
                             <div class="image">
                                 <img src="../assets/images/shop-11-img.jpg" alt="">
                             </div>
@@ -498,25 +689,26 @@
                                 <div class="addToCart d-flex justify-content-center">
                                     <div class="text"><span>Add to cart</span></div>
 
-                                    <div class="price"><span style="font-size: 12px;">170$</span></div>
+                                    <div class="price"><span style="font-size: 12px;">170</span><span>$</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="basket5">
+                        <div class="product" data-id="5">
                             <div class="image">
                                 <div class="sale"><span>Sale</span></div>
                                 <img src="../assets/images/shop-12-img.jpg" alt="">
                             </div>
-                            <div class="productName">Scarlet Sage</div>
+                            <div class="productName">SCARLET SAGE</div>
                             <div class="productPrice cart-container d-flex justify-content-center">
                                 <div class="addToCart d-flex justify-content-center">
                                     <div class="text"><span>Add to cart</span></div>
 
-                                    <div class="price"><span style="font-size: 12px;"><del> 259$</del> 159$</span></div>
+                                    <div class="price"><span
+                                            style="font-size: 12px;">159</span><span>$</span><del>259$</del></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="basket6">
+                        <div class="product" data-id="6">
                             <div class="image">
                                 <img src="../assets/images/shop-9-img.jpg" alt="">
                             </div>
@@ -525,11 +717,11 @@
                                 <div class="addToCart d-flex justify-content-center">
                                     <div class="text"><span>Add to cart</span></div>
 
-                                    <div class="price"><span style="font-size: 12px;">259$</span></div>
+                                    <div class="price"><span style="font-size: 12px;">259</span><span>$</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="basket7">
+                        <div class="product" data-id="7">
                             <div class="image">
                                 <img src="../assets/images/shop-8-img.jpg" alt="">
                             </div>
@@ -538,11 +730,11 @@
                                 <div class="addToCart d-flex justify-content-center">
                                     <div class="text"><span>Add to cart</span></div>
 
-                                    <div class="price"><span style="font-size: 12px;">259$</span></div>
+                                    <div class="price"><span style="font-size: 12px;">259</span><span>$</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="basket8">
+                        <div class="product" data-id="8">
                             <div class="image">
                                 <img src="../assets/images/shop-7-img.jpg" alt="">
                             </div>
@@ -551,7 +743,7 @@
                                 <div class="addToCart d-flex justify-content-center">
                                     <div class="text"><span>Add to cart</span></div>
 
-                                    <div class="price"><span style="font-size: 12px;">259$</span></div>
+                                    <div class="price"><span style="font-size: 12px;">259</span><span>$</span></div>
                                 </div>
                             </div>
                         </div>
@@ -563,12 +755,13 @@
             <div class="container">
                 <div class="row">
                     <div class="video-article d-flex justify-content-aroundcol-lg-12">
-                        <div class="videoImg col-md-12 col-lg-7">
+                        <div class="videoImg col-lg-7">
                             <div class="icon">
-                                <i class="fas fa-play-circle"></i></div>
+                                <i class="fas fa-play-circle"></i>
+                            </div>
                             <img src="../assets/images/h3-video-img.jpg" alt="">
                         </div>
-                        <div class="article col-md-12 col-lg-5">
+                        <div class="article col-lg-5">
                             <div class="title">
                                 <h5>
                                     Suprise Your <span>Valentine!</span> <br>
@@ -611,23 +804,23 @@
                             <div class="desc">A perfect blend of creativity, energy, communication, happiness and love.
                                 Let us <br> arrange a smile for you.</div>
                         </div>
-                        <div class="experts col-lg-12 d-flex justify-content-between">
-                            <div class="expert col-lg-3 col-sm-3 flex-sm-wrap">
+                        <div class="experts  col-lg-12 d-flex justify-content-between">
+                            <div class="expert col-lg-3 col-sm-12 col-md-6 ">
                                 <div class="expImage"><img src="../assets/images/expert1.png" alt=""></div>
                                 <div class="expName">CRYSTAL BROOKS</div>
                                 <div class="expProfession">Florist</div>
                             </div>
-                            <div class="expert col-lg-3 col-sm-3 flex-sm-wrap">
+                            <div class="expert col-lg-3 col-sm-12 col-md-6 ">
                                 <div class="expImage"><img src="../assets/images/expert2.png" alt=""></div>
                                 <div class="expName">SHIRLEY HARRIS</div>
                                 <div class="expProfession">Manager</div>
                             </div>
-                            <div class="expert col-lg-3 col-sm-3 flex-sm-wrap">
+                            <div class="expert col-lg-3 col-sm-12 col-md-6">
                                 <div class="expImage"><img src="../assets/images/expert3.png" alt=""></div>
                                 <div class="expName">BEVERLY CLARK</div>
                                 <div class="expProfession">Florist</div>
                             </div>
-                            <div class="expert col-lg-3 col-sm-3 flex-sm-wrap">
+                            <div class="expert col-lg-3 col-sm-12 col-md-6 ">
                                 <div class="expImage"><img src="../assets/images/expert4.png" alt=""></div>
                                 <div class="expName">AMANDA WATKINS</div>
                                 <div class="expProfession">Florist</div>
@@ -638,9 +831,9 @@
             </div>
         </section>
         <section id="myParallax">
-            <div class="parallax-window d-flex justify-content-center align-items-center flex-column "
+            <div class="parallaxClass parallax-window d-flex justify-content-center align-items-center flex-column "
                 data-parallax="scroll" data-image-src="../assets/images/parallaxImg.jpg">
-                <div class="parallaxText ">
+                <div class="parallaxText">
                     <h2>Join The Colorful Bunch!</h2>
                 </div>
                 <div class="registration d-flex ">
@@ -666,8 +859,8 @@
                     <div class="blogImages d-flex justify-content-around  col-lg-12">
                         <div class="blogImage col-lg-4">
                             <div class="image">
-                                <div class="date"><span> 27.04.2018</span></div> <img
-                                    src="../assets/images/blogimage1.jpg" alt="">
+                                <div class="date"><span> 27.04.2018</span></div>
+                                <img src="../assets/images/blogimage1.jpg" alt="">
 
                             </div>
                             <div class="imageName">Flower Power</div>
@@ -818,7 +1011,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <div class="d-none goUp">
         <i class="fas fa-chevron-up icon icon1"></i>
         <i class="fas fa-chevron-up icon icon2"></i>
