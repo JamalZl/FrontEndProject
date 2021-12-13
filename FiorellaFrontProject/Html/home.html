@@ -165,12 +165,10 @@
                                     </div>
 
                                 </li>
-                                <li><a href="">ELEMENTS</a>
+                               <li><a href="">ELEMENTS</a>
                                     <div class="elements">
                                         <ul>
-
-                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
-                                                    style="font-size: 7px;"></i><a href="">Classic</a>
+                                            <li class="d-flex justify-content-between"> <a href="">Classic</a>
                                                 <div class="elements-inner-classic">
                                                     <!-- <ul>
                                                         <li><a href=""></a></li>
@@ -181,17 +179,14 @@
                                                     </ul> -->
                                                 </div>
                                             </li>
-                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
-                                                    style="font-size: 7px;"></i><a href="">Infographic</a>
+                                            <li class="d-flex justify-content-between"> </i><a href="">Infographic</a>
                                                 <div class="elements-inner-info"></div>
                                             </li>
                                             <li class="d-flex justify-content-between">
-                                                <i class="fas fa-chevron-left" style="font-size: 7px;"></i><a
-                                                    href="">Interactive</a>
+                                                <a href="">Interactive</a>
                                                 <div class="elements-inner-interactive"></div>
                                             </li>
-                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
-                                                    style="font-size: 7px;"></i><a href="">Typography</a>
+                                            <li class="d-flex justify-content-between"> <a href="">Typography</a>
                                                 <div class="elements-inner-typo"></div>
                                             </li>
                                         </ul>
@@ -209,18 +204,6 @@
                                     </i>
                                     <div class="basketView">
                                         <ul class="basketProducts">
-                                            <!-- <li data-id="basket1">
-                                                <div class="basketImage">
-                                                    <img src="../assets/images/shopListmini3.jpg" alt="">
-                                                </div>
-                                                <div class="name-price">
-                                                    <p>Sweet Alyssum</p>
-                                                    <span id="basket1">1 <span class="x">x</span></span>
-                                                    <span >259<span>$</span></span>
-                                                </div>
-                                                <i class="remove fas fa-times"></i>
-                                            </li> -->
-
                                         </ul>
                                         <div class="total-viewCart-checkout">
                                             <div class="total">
@@ -237,9 +220,8 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="text"><span>Cart<span class="basketTotalPrice"><span
-                                                    style="margin-left: 5px;">0</span></div>
+                                    style="margin-left: 5px;">0</span></div><span>$</span>
                                 </div>
                             </div>
 
@@ -370,11 +352,10 @@
                                         <ul>
                                             <li><a href="">Masonry</a></li>
                                             <li><a href="">Standart</a></li>
-                                            <li class="menuBlogPostLi"><a href="#">Post Types
-                                                </a>
+                                            <li class="menuBlogPostLi"><a href="#">Post Types</a>
                                                 <i class="fas fa-chevron-right" style="font-size: 9px;"></i>
                                                 <div class="menuBlog-inner-post">
-                                                    <ul>
+                                                    <ul class="menuBlogUl">
                                                         <li><a href="">Standart</a></li>
                                                         <li><a href="">Gallery</a></li>
                                                         <li><a href="">Link</a></li>
@@ -387,7 +368,27 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">ELEMENTS</a></li>
+                                <li class="menuElementsLi"><a href="#">ELEMENTS</a>
+                                    <span><i style="font-size: 9px;" class="fas fa-chevron-right"></i></span>
+                                    <div class="menuElements">
+                                        <ul>
+                                            <li class="d-flex justify-content-between"> <a href="">Classic</a>
+                                                <div class="elements-inner-classic">
+                                                </div>
+                                            </li>
+                                            <li class="d-flex justify-content-between"><a href="">Infographic</a>
+                                                <div class="elements-inner-info"></div>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <a href="">Interactive</a>
+                                                <div class="elements-inner-interactive"></div>
+                                            </li>
+                                            <li class="d-flex justify-content-between"> <a href="">Typography</a>
+                                                <div class="elements-inner-typo"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -395,19 +396,19 @@
             </div>
         </nav>
     </header>
-    <!-- <header>
+
+    <div id="stickyHeader">
         <nav>
             <div class="container">
                 <div class="row justify-content-between">
-                    <div 
-                        class="stickyNavBar logo-links-cart d-none col-lg-12 col-sm-4 col-4 d-flex justify-content-start align-items-center">
+                    <div
+                        class="stickyNavBar logo-links-cart col-lg-12 col-sm-4 col-4 d-flex justify-content-start align-items-center">
                         <div class="logo col-4 col-sm-d">
                             <a href="C:\Users\jamalaz\Desktop\FiorellaFrontProject\Html\home.html"><img
                                     src="../assets/images/h2-logo-1.png" alt=""></a>
                         </div>
                         <div style="height: 100%;" class="nav-links col-lg-6 d-flex justify-content-between">
-                            <ul style="height: 100%; width: 100%;"
-                                class="sub-links d-flex justify-content-between">
+                            <ul style="height: 100%; width: 100%;" class="sub-links d-flex justify-content-between">
                                 <li class="homeLi"><a href="">
                                         <div class="homeLi"></div>HOME
                                     </a>
@@ -536,33 +537,29 @@
                                     </div>
 
                                 </li>
-                                <li><a href="">ELEMENTS</a>
-                                    <div class="elements">
+                                <li class="menuElementsLi"><a href="#">ELEMENTS</a>
+                                    <span><i style="font-size: 9px;" class="fas fa-chevron-right"></i></span>
+                                    <div class="menuElements">
                                         <ul>
-
-                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
-                                                    style="font-size: 7px;"></i><a href="">Classic</a>
+                                            <li class="d-flex justify-content-between"> <a href="">Classic</a>
                                                 <div class="elements-inner-classic">
-                                                    <ul>
+                                                    <!-- <ul>
                                                         <li><a href=""></a></li>
                                                         <li><a href=""></a></li>
                                                         <li><a href=""></a></li>
                                                         <li><a href=""></a></li>
                                                         <li><a href=""></a></li>
                                                     </ul> -->
-                                                <!-- </div>
+                                                </div>
                                             </li>
-                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
-                                                    style="font-size: 7px;"></i><a href="">Infographic</a>
+                                            <li class="d-flex justify-content-between"><a href="">Infographic</a>
                                                 <div class="elements-inner-info"></div>
                                             </li>
                                             <li class="d-flex justify-content-between">
-                                                <i class="fas fa-chevron-left" style="font-size: 7px;"></i><a
-                                                    href="">Interactive</a>
+                                                <a href="">Interactive</a>
                                                 <div class="elements-inner-interactive"></div>
                                             </li>
-                                            <li class="d-flex justify-content-between"> <i class="fas fa-chevron-left"
-                                                    style="font-size: 7px;"></i><a href="">Typography</a>
+                                            <li class="d-flex justify-content-between"> <a href="">Typography</a>
                                                 <div class="elements-inner-typo"></div>
                                             </li>
                                         </ul>
@@ -573,7 +570,7 @@
                     </div>
                 </div>
         </nav>
-    </header> -->
+    </div>
     <main>
         <section id="flowers3">
             <div class="imagesSlide">
@@ -613,20 +610,20 @@
                                     <li><a class="types" data-id="all" href="#">ALL</a></li>
                                     <li><a class="types" data-id="popular" href="#">POPULAR</a></li>
                                     <li><a class="types" data-id="winter" href="#">WINTER</a></li>
-                                    <li><a class="types" data-id="various" href="">VARIOUS</a></li>
-                                    <li><a class="types" data-id="exotic" href="">EXOTIC</a></li>
-                                    <li><a class="types" data-id="greens" href="">GREENS</a></li>
-                                    <li><a class="types" data-id="cactuses" href="">CACTUSES</a></li>
+                                    <li><a class="types" data-id="various" href="#">VARIOUS</a></li>
+                                    <li><a class="types" data-id="exotic" href="#">EXOTIC</a></li>
+                                    <li><a class="types" data-id="greens" href="#">GREENS</a></li>
+                                    <li><a class="types" data-id="cactuses" href="#">CACTUSES</a></li>
                                 </ul>
                             </div>
                             <ul class="flowerTypes col-lg-6 d-flex justify-content-around">
                                 <li><a class="types" data-id="all" href="#">ALL</a></li>
                                 <li><a class="types" data-id="popular" href="#">POPULAR</a></li>
                                 <li><a class="types" data-id="winter" href="#">WINTER</a></li>
-                                <li><a class="types" data-id="various" href="">VARIOUS</a></li>
-                                <li><a class="types" data-id="exotic" href="">EXOTIC</a></li>
-                                <li><a class="types" data-id="greens" href="">GREENS</a></li>
-                                <li><a class="types" data-id="cactuses" href="">CACTUSES</a></li>
+                                <li><a class="types" data-id="various" href="#">VARIOUS</a></li>
+                                <li><a class="types" data-id="exotic" href="#">EXOTIC</a></li>
+                                <li><a class="types" data-id="greens" href="#">GREENS</a></li>
+                                <li><a class="types" data-id="cactuses" href="#">CACTUSES</a></li>
                             </ul>
                         </div>
                         <div class="filter col-lg-2">
@@ -637,9 +634,9 @@
                         </div>
 
                     </div>
-                    <div class="products d-flex flex-wrap justify-content-around">
-                        <div class="product" data-id="1">
-                            <div class="image popular winter">
+                    <div class="products d-flex flex-wrap ">
+                        <div class="product all  winter cactuses" data-id="1">
+                            <div class="image">
                                 <img src="../assets/images/shop-14-img.jpg" alt="">
                             </div>
                             <div class="productName">
@@ -652,8 +649,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="2">
-                            <div class="image popular winter">
+                        <div class="product all  greens exotic various " data-id="2">
+                            <div class="image">
                                 <img src="../assets/images/shop-13-img.jpg" alt="">
                             </div>
                             <div class="productName">FOXGLOVE FLOWER</div>
@@ -665,7 +662,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="3">
+                        <div class="product all winter greens popular cactuses" data-id="3">
                             <div class="image">
                                 <div class="sold"><span>Sold</span> </div>
                                 <img src="../assets/images/shop-10-img.jpg" alt="">
@@ -680,7 +677,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="4">
+                        <div class="product all winter various popular" data-id="4">
                             <div class="image">
                                 <img src="../assets/images/shop-11-img.jpg" alt="">
                             </div>
@@ -693,7 +690,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="5">
+                        <div class="product all  popular" data-id="5">
                             <div class="image">
                                 <div class="sale"><span>Sale</span></div>
                                 <img src="../assets/images/shop-12-img.jpg" alt="">
@@ -708,7 +705,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="6">
+                        <div class="product all cactuses various" data-id="6">
                             <div class="image">
                                 <img src="../assets/images/shop-9-img.jpg" alt="">
                             </div>
@@ -721,7 +718,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="7">
+                        <div class="product all exotic greens winter" data-id="7">
                             <div class="image">
                                 <img src="../assets/images/shop-8-img.jpg" alt="">
                             </div>
@@ -734,7 +731,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product" data-id="8">
+                        <div class="product all exotic winter" data-id="8">
                             <div class="image">
                                 <img src="../assets/images/shop-7-img.jpg" alt="">
                             </div>

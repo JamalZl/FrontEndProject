@@ -37,7 +37,6 @@ $(document).ready(function () {
         $(".sl").slideToggle();
         $(".slh4 i").toggleClass("myRotate");
     })
-
     $(".menuPortfolioLi a").click(function () {
         $(".menuPortfolio").slideToggle();
         $(".menuPortfolioLi i").toggleClass("myRotate");
@@ -51,12 +50,16 @@ $(document).ready(function () {
         $(".menuPortfolioSingleLi i").toggleClass("myRotate");
     })
     $(".menuBlogLi a").click(function () {
-        $(".menuBlog").slideDown();
+        $(".menuBlog").slideToggle();
         $(".menuBlogLi i").toggleClass("myRotate");
     })
     $(".menuBlogPostLi a").click(function () {
-        $(".menuBlog-inner-post").slideToggle();
+        $(".menuBlog-inner-post").slideDown();
         $(".menuBlogPostLi i").toggleClass("myRotate");
+    })
+    $(".menuElementsLi a").click(function (){
+        $(".menuElements").slideToggle();
+        $(".menuElementsLi i").toggleClass("myRotate");
     })
 
     ///////////goToTop///////////
@@ -74,110 +77,20 @@ $(document).ready(function () {
     ///////////goToTop////////////
 
     ////////Basket////////
-    let addToCards = document.querySelectorAll("#productList .products .product .text")
-    let products = document.querySelector(".basketProducts")
 
-    addToCards.forEach(addToCard => {
-        addToCard.onclick = function () {
-            let Id = this.parentNode.parentNode.parentNode.getAttribute("data-id")
-            let img = this.parentNode.parentNode.parentNode.firstElementChild.lastElementChild.getAttribute("src")
-            let name = this.parentNode.parentNode.parentNode.children[1].innerText;
-            let price = this.parentNode.children[1].firstElementChild.innerText
-
-            if (localStorage.getItem("basket") == null) {
-                localStorage.setItem("basket", JSON.stringify([]))
-            }
-            let basket = JSON.parse(localStorage.getItem("basket"))
-
-            let isExcistedProduct = basket.find((b) => b.id == Id);
-
-            if (isExcistedProduct === undefined) {
-                let product = {
-                    id: Id,
-                    image: img,
-                    name: name,
-                    price: price,
-                    count: 1,
-                };
-                basket.push(product);
-                getBasketProductBody(product)
-            } else {
-                let count = document.getElementById(`${isExcistedProduct.id}`);
-                +count.innerHTML++;
-                isExcistedProduct.count++;
-            }
-            localStorage.setItem("basket", JSON.stringify(basket));
-            countCalculator();
-            totalPrice();
-        };
-    });
-    countCalculator();
-
-    function countCalculator() {
-        if (localStorage.getItem("basket") == null) {
-            localStorage.setItem("basket", JSON.stringify([]))
+   $("#stickyHeader").hide()
+    $(window).scroll(function () {
+        if (window.scrollY >= 300) {
+            $("#stickyHeader").show()
+            $("#stickyHeader").css({
+                "position":"sticky",
+                "top":"0px",
+                "z-index": "1000000000",
+                "background-color":"white"
+            })
         }
-        let elementCount = document.querySelector(".basketProductCount")
-        let basket = JSON.parse(localStorage.getItem("basket"));
-        if (basket.length == null) {
-            basket = localStorage.setItem("basket", JSON.stringify([]))
+        if (window.scrollY <= 299) {
+           $("#stickyHeader").hide()
         }
-        elementCount.innerHTML = basket.length;
-    }
-    totalPrice();
-
-    function totalPrice() {
-        let basketTotalPrice = document.querySelectorAll(".basketTotalPrice");
-        let basket = JSON.parse(localStorage.getItem("basket"));
-        let basketTotal = basket.reduce((basketTotal, bt) => {
-            return (basketTotal += +bt.price * bt.count);
-        }, 0);
-        basketTotalPrice.forEach(b => {
-            b.innerHTML = "(" + basketTotal + "$)";
-        })
-    }
-    getProduct();
-
-    function getProduct() {
-        let basket = JSON.parse(localStorage.getItem("basket"))
-        basket.forEach(b => {
-            getBasketProductBody(b);
-        })
-    }
-
-    function getBasketProductBody(product) {
-        products.innerHTML += `<li data-id="basket1">
-                  <div class="basketImage">
-                <img src="${product.image}" alt="">
-            </div>
-            <div class="name-price">
-                <p>${product.name}</p>
-                <span id="${product.id}">${product.count}</span><span class="x">x</span>
-                <span >${product.price}<span>$</span></span>
-            </div>
-            <i class="remove fas fa-times"></i>
-        </li>`
-    }
-////StickyNavbar/////
-
-
-    // $(".remove").click(function () {
-    //     this.parentElement.remove();
-    //     localStorage.clear();
-
-    // })
-    //////Basket//////
-
+    })
 })
-// function removeItem(id){
-//     let basket= JSON.parse(localStorage.getItem("basket"))
-//     const newItemsSet=basket.filter(i =>i.id !==id)
-//     localStorage.setItem("basket",JSON.stringify(newItemsSet))
-
-//  }
-// function removeProduct(pr) {
-//     removeItem(pr.parentNode.getAttribute("data-id"))
-//     pr.parentElement.remove();
-//     countCalculator();
-//     totalPrice();
-// }
